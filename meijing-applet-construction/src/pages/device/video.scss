@@ -1,0 +1,236 @@
+@import "../../common/common.scss";
+@import "~taro-ui/dist/style/components/activity-indicator.scss";
+@import '~taro-ui/dist/style/components/loading.scss';
+
+page {
+  width: 100%;
+  height: 100%;
+  .root-empty {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    box-sizing: border-box;
+    padding-top: 180px;
+  }
+  .root {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    .video-empty {
+      width: 100%;
+      height: 30%;
+      box-sizing: border-box;
+      padding-top: 50px;
+    }
+    // position: relative;
+    .live_player_container {
+      width: 100%;
+      height: 30%;
+      position: relative;
+
+      .img_full {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 20px;
+        bottom: 20px;
+        padding: 24px;
+      }
+
+      .video_error {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        color: #ffffff;
+      }
+
+      &--hide {
+        .snapshot,
+        .img_play,
+        .img_full{
+          display: none !important;
+        }
+      }
+      .live-player {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .live-player-control {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .snapshot {
+        position: absolute;
+        width: 166px;
+        right: 0;
+        top: 20px;
+        display: flex;
+        align-items: center;
+        .img {
+          width: 36px;
+          height: 36px;
+        }
+        .txt {
+          font-size: 24px;
+          font-family: PingFang SC, PingFang SC-Regular;
+          font-weight: 400;
+          color: #ffffff;
+          margin-left: 10px;
+        }
+      }
+      .img_full {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 20px;
+        bottom: 20px;
+      }
+      .img_play {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 20px;
+        bottom: 20px;
+      }
+      .hide-canvas{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0);
+
+        .online-title{
+          width: 230px;
+          height: 72px;
+          background: #232831;
+          border-radius: 18PX;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-left: -115px;
+          margin-top: -36px;
+          opacity: 0.8;
+          font-size: 15PX;
+          color: #ffffff;
+          text-align: center;
+          line-height: 72px;
+        }
+      }
+    }
+    .inspect_container {
+      flex: 1;
+      margin-top: 34px;
+      width: 100%;
+      padding-left: 32px;
+      padding-right: 32px;
+      box-sizing: border-box;
+      .tip {
+        font-size: 40px;
+        font-family: PingFang SC, PingFang SC-Medium;
+        font-weight: 500;
+        text-align: left;
+        color: #101f42;
+        line-height: 40px;
+        letter-spacing: 0px;
+      }
+      .content {
+        height: calc(100% - 50px);
+        box-sizing: border-box;
+        .empty {
+          padding-top: 200px;
+        }
+      }
+    }
+    .scrollview {
+      white-space: nowrap;
+      padding-left: 30px;
+      padding-right: 30px;
+      box-sizing: border-box;
+      height: 230px;
+      border: 1px solid #e6e7eb;
+      .video_item {
+        margin-right: 20px;
+        padding-top: 22px;
+        box-sizing: border-box;
+        height: 180px;
+        width: 210px;
+        display: inline-block;
+        position: relative;
+        .sentry_icon {
+          width: 26px;
+          height: 30px;
+          position: absolute;
+          right: 14px;
+          top: 32px;
+        }
+        .on_selected {
+          border: 6px solid #0d86ff;
+        }
+        .on_selected_title {
+          color: #0d86ff !important;
+        }
+        .video_container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          .video {
+            width: 100%;
+            flex: 1;
+            border-radius: 10px;
+          }
+          .title {
+            font-family: PingFang SC, PingFang SC-Regular;
+            color: #414f70;
+            padding-top: 8px;
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 95%;
+            font-size: 24px;
+            line-height: 24px;
+            height: 24px;
+            text-align: center;
+            word-break: break-all;
+            word-wrap: break-word;
+            white-space: normal;
+          }
+        }
+      }
+    }
+    .no_video{
+      position: absolute;
+      left: 50%;
+      top: 286px;
+      width: 290px;
+      margin-left: -145px;
+      text-align: center;
+      font-size: 14PX;
+      font-family: PingFang SC, PingFang SC-Regular;
+      font-weight: 400;
+      color: #b2b8c6;
+      .no_video_img{
+        width: 290px;
+        height: 214px;
+        display: block;
+      }
+    }
+  }
+
+  .at-activity-indicator__content {
+    color: #ffffff;
+    font-size: 36px;
+  } 
+}

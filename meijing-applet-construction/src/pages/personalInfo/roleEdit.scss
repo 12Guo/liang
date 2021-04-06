@@ -1,0 +1,36 @@
+.roleEdit{
+    width: 750px;
+    background:rgba(255,255,255,1);
+    opacity:1;
+    height: 100vh;
+
+    .top_back{
+        width:750px;
+        height:24px;
+        background:rgba(242,245,247,1);
+        opacity:1;
+    }
+
+
+    .button_panel{
+        width:750px;
+        height: 144px;
+        background:rgba(255,255,255,1);
+        margin-top:50px;
+    
+        .eidt_button{
+          margin: 24px 32px;
+          width:686px;
+          height:96px;
+          line-height:96px; 
+          background:rgba(16,145,255,1);
+          opacity:1;
+          border-radius:8px;
+          font-size:32px;
+          font-family:PingFang SC;
+          font-weight:500;
+          color:rgba(255,255,255,1);
+        }
+    }
+
+}

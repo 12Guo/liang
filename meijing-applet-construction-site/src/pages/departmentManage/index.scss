@@ -1,0 +1,183 @@
+@import '../../common/common.scss';
+
+.content {
+    background:rgba(242,245,247,1);
+    opacity:1;
+    height: 100vh;
+    padding-top: 24px;
+    box-sizing: border-box;
+
+    .scrollView {
+        background-color: #ffffff;
+    }
+
+    .navbar {
+        height:100px;
+        background:rgba(255,255,255,1);
+        display: flex;
+        font-size:32px;
+        font-family:PingFang SC;
+        font-weight:400;
+        color:rgba(122,132,153,1);
+        box-sizing: border-box;
+        padding-left: 32px;
+        border-bottom:2px solid rgba(235,235,235,1);
+        position: relative;
+        z-index: 1;
+        width: 1800px;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            color:rgba(122,132,153,1);
+
+            &--nav {
+                color: #1091FF;
+                position: relative;
+                &:after {
+                    content: '>';
+                    display: block;
+                    width:16px;
+                    height:30px;
+                    padding: 0 18px;
+                    line-height: 30px;
+                    color:rgba(122,132,153,1);
+                    margin-top: -4px;
+                }
+                &:before {
+                    content: ' ';
+                    display: flex;
+                    position: absolute;
+                    height: 3px;
+                    background-color: #1091FF;
+                    bottom: 30px;
+                    width: calc(100% - 50px);
+                }
+            }
+        }
+    }
+
+    .department_list{
+        width:750px;
+        height: calc(100vh - 220px);
+        position: relative;
+        margin-top: -2px;
+
+        .empty{
+            height: calc(100vh - 220px);
+            padding-top: 45px;
+            background-color: #ffffff;
+            box-sizing: border-box;
+        }
+
+        &-nonav {
+            height: calc(100vh - 120px);
+        }
+        .listWrap {
+            background:rgba(255,255,255,1);
+            .list-item {
+                position: relative;
+                padding-left: 32px;
+                background:rgba(255,255,255,1);
+                .list-row {
+                    height: 104px;
+                    border-bottom:1px solid rgba(235,235,235,1);
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &_txt {
+                        font-size:36px;
+                        font-family:PingFang SC;
+                        font-weight:400;
+                        color:rgba(27,46,89,1);
+                    }
+                    &_icon {
+                      display: block;
+                      background-image: url(#{$rootUrl}/assets/pollution-manage/arrow.png);
+                      width: 36px;
+                      height: 36px;
+                      background-size: 36px 36px;
+                      margin-right: 32px;
+                      transform: rotate(90deg);
+                    }
+                }
+                .list-float {
+                    display: none;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 104px;
+                    right: 120px;
+                    background:rgba(255,255,255,1);
+                    box-shadow:0px 4px 12px rgba(0,0,0,0.25);
+                    z-index: 100;
+                    .txt {
+                        font-size:32px;
+                        font-family:PingFang SC;
+                        font-weight:400;
+                        color:rgba(16,145,255,1);
+                        height: 96px;
+                        width: 216px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+                        &-red {
+                            color: rgba(229,78,78,1);
+                            border-top:2px solid rgba(235,235,235,1);
+                        }
+                    }
+                    &__show {
+                        display: flex;
+                    }
+                    &__bottom {
+                        top: -104px;
+                    }
+                }
+                .list-mask {
+                    content: '';
+                    width: 100%;
+                    height: 100vh;
+                    background-color: transparent;
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    z-index: 99;
+                }
+                &__gray {
+                    background-color: rgba(242, 244, 247, 1);
+                }
+            }
+        }
+    }
+      
+    .addButtonView{
+        width:750px;
+        height:96px;
+        background:rgba(255,255,255,1);
+        box-shadow:0px 0px 20px rgba(0,0,0,0.1);
+        opacity:1;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .add_image {
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+        }
+        .text{
+            font-size:32px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(16,145,255,1);
+        }
+    }
+  }
+ 
+  .at-modal__content {
+    min-height: auto !important;
+    text-align: center;
+  }

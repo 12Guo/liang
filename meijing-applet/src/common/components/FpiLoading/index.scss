@@ -1,0 +1,25 @@
+.fpi-loading {
+    display: flex;
+    justify-content: center;
+    .dot {
+        height: 14px;
+        width: 14px;
+        border-radius: 50%;
+        background: #BAC0C5;
+        margin: 0 6px;
+        opacity: 0.5;
+    }
+
+    .active {
+        animation: myLoading .1s;
+    }
+
+    @keyframes myLoading {
+        0% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1.0;
+        }
+    }
+}

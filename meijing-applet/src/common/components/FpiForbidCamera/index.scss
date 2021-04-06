@@ -1,0 +1,40 @@
+.forbid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    
+    &_img {
+        width: 124px;
+        height: 108px;
+    }
+
+    &_tips {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0 84px;
+        .tip {
+            font-size:32px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(178,184,198,1);
+            text-align: center;
+        }
+    }
+
+    &_btn {
+        width:300px;
+        .btn {
+            height:88px;
+            line-height: 88px;
+            background:rgba(255,255,255,1);
+            border:2px solid rgba(178,184,198,1);
+            border-radius:8px;
+            font-size:32px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(65,79,112,1);
+            border: none;
+        }
+    }
+}

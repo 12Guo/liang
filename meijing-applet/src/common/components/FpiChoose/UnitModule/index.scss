@@ -1,0 +1,97 @@
+
+.module__container {
+    .module__title {
+        font-size:32px;
+        font-family:PingFang SC;
+        font-weight:500;
+        color:rgba(122,132,153,1);
+        height: 90px;
+        display: flex;
+        align-items: center;
+        border-bottom:2px solid rgba(235,235,235,1);
+        margin-left: 32px;
+    }
+    .module__body {
+        .module__item {
+            display: flex;
+            box-sizing: border-box;
+            height: 104px;
+            align-items: center;
+            position: relative;
+            padding-left: 32px;
+            .img {
+                width: 48px;
+                height: 48px;
+                padding: 0 10px;
+
+                &--disabled {
+                    opacity: .3;
+                }
+            }
+            .txt {
+                font-size:36px;
+                font-family:PingFang SC;
+                font-weight:400;
+                color:rgba(27,46,89,1);
+                margin-left: 24px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                max-width: calc(100vw - 280px);
+            }
+            .sub {
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+
+                &__container {
+                    display: flex;
+                    align-items: center;
+                    .tree_img {
+                        width: 28px;
+                        height: 28px;
+                    }
+                    .tree_txt {
+                        font-size:28px;
+                        font-family:PingFang SC;
+                        font-weight:400;
+                        color:rgba(16,145,255,1);
+                        margin-left: 6px;
+                    }
+                    margin-right: 32px;
+
+                    &--disabled {
+                        opacity: .5;
+                    }
+                }
+                .right_img {
+                    width: 16px;
+                    height: 30px;
+                    padding-right: 32px;
+                }
+            }
+            &:after {
+                content: '';
+                height: 2px;
+                position: absolute;
+                left: 60px;
+                right: 0;
+                bottom: 0;
+                background-color: #EBEBEB;
+            }
+        }
+        &.no-line {
+            .module__item {
+                &:last-child {
+                    &:after {
+                        background-color: transparent !important;
+                    }
+                }
+            }
+        }
+    }
+
+    &--hide {
+        display: none;
+    }
+}

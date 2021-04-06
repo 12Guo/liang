@@ -1,0 +1,42 @@
+.add-user {
+  background:rgba(242,245,247,1);
+  height: 100vh;
+  box-sizing: border-box;
+  padding-top: 24px;
+
+  .divider{
+    width: 90%;
+    margin-left: 5%;
+    height: 2px;
+    background: #E1E2E6
+  }
+
+  .container {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+
+    .img {
+      width: 64px;
+      height: 64px;
+      margin-left: 32px;
+    }
+
+    .txt {
+      font-size:36px;
+      font-family:PingFang SC;
+      font-weight:400;
+      color:rgba(16,31,66,1);
+      margin-left: 16px;
+    }
+  }
+
+  .operate_button{
+    padding: 0px;
+    margin: 0px;
+    border:none;
+    text-align: center;
+    border-radius: 0px !important
+  }
+}

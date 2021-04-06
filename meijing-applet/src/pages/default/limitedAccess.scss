@@ -1,0 +1,52 @@
+.content{
+    width: 750px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .imageAndMessage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .imageItem{
+            width: 293px;
+            height: 263px;
+        }
+
+        .message{
+            display: block;
+            font-size:32px;
+            font-family:PingFang SC;
+            font-weight:400;
+            line-height:40px;
+            color:rgba(178,184,198,1);
+            opacity:1;
+        }
+    }
+
+    .backButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:424px;
+        height:88px;
+        background:rgba(255,255,255,1);
+        border:2px solid rgba(225,226,230,1);
+        opacity:1;
+        border-radius:8px;
+        margin-top: 122rpx;
+        
+        .text{
+            font-size:32px;
+            font-family:PingFang SC;
+            font-weight:400;
+            line-height: 88px;
+            color:rgba(122,132,153,1);
+            opacity:1;
+        }
+    }
+}

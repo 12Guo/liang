@@ -1,0 +1,35 @@
+.content{
+    align-items: center;
+    background:rgba(255,255,255,1);
+    opacity:1;
+    height: 100vh;
+
+    .top_back{
+        width:750px;
+        height:24px;
+        background:rgba(242,245,247,1);
+        opacity:1;
+    }
+
+
+    .button_panel{
+        width: 750px;
+        height: 144px; 
+        margin-top: 50px;
+
+        .edit_button{
+            margin: 24px 32px;
+            width:686px;
+            height:96px;
+            background:rgba(16,145,255,1);
+            opacity:1;
+            border-radius:8px;
+        }
+       
+    }
+}
+
+.divisionChoose{
+    height: calc(100vh - 218px);
+    padding: 50px;
+}

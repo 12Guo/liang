@@ -1,0 +1,37 @@
+.unionid-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .img {
+    width: 284px;
+    height: 268px;
+    margin-top: 110px;
+  }
+
+  .txt {
+    font-size:32px;
+    font-family:PingFang SC;
+    font-weight:400;
+    line-height:52px;
+    color:rgba(65,79,112,1);
+  }
+
+  .btn {
+    width:296px;
+    height:88px;
+    line-height: 88px;
+    background:rgba(255,255,255,1);
+    border:2px solid rgba(16,145,255,1);
+    border-radius:8px;
+    margin-top: 70px;
+  }
+
+  .popUp {
+    .txt {
+      text-align: center;
+    }
+  }
+}

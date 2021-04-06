@@ -1,0 +1,115 @@
+//按钮颜色
+$btn-color: #1091FF;
+//模态对话框颜色
+$model-warn: #414F70;
+//模态对话框body颜色
+$model-body-color: #101F42;
+
+page {
+  width: 100%;
+  height: 100%;
+
+  .root_view {
+    width: 100%;
+    height: 100%;
+    
+    .space_view{
+      width: 100%;
+      height: 30px;
+      background: #F2F5F7;
+    }
+
+    .detail{
+      padding: 30px;
+      color: #414F70;
+      font-size: 36px;
+      font-family: PingFang SC;
+    }
+
+    .tip_detail{
+      height: 160px;
+      margin-left: 30px;
+      margin-right: 30px;
+      border-bottom: 1px solid #E6E7EB;
+      color: #0A2463;
+      font-size: 38px;
+      margin-top: 50px;
+      display: inline-block;
+      text-align: left;
+    }
+
+    .item_icon_and_tip{
+      margin-top: 30px;
+      height: 110px;
+      .image{
+        vertical-align: middle;
+        display: inline-block;
+        width: 80px;
+        height: 110px;
+        margin-left: 30px;
+      }
+      .tip_info{
+        vertical-align: middle;
+        font-family: Microsoft YaHei;
+        color: #0A2463;
+        font-size: 42px;
+        display: inline-block;
+        margin-left: 30px;
+        line-height: 110px;
+        height: 110px;
+      }
+    }
+
+    .btn_on_notagree {
+      width: 100%;
+      height: 100px;
+      position: fixed;
+      bottom: 30px;
+
+      .close {
+        display: inline-block;
+        height: 100%;
+        width: 50%;
+      }
+
+      .back {
+        display: inline-block;
+        height: 100%;
+        width: 50%;
+
+      }
+
+      .at-button--primary {
+        background-color: #1091FF;
+      }
+
+      .at-button__text {
+        font-size: 38px;
+      }
+
+      .view_foot_btn {
+        width: 90%;
+      }
+    }
+    .btn {
+      width: 100%;
+      height: 100px;
+      position: fixed;
+      bottom: 30px;
+      text-align: center;
+
+      .view_foot_btn {
+        width: 92%;
+        height: 100%;
+      }
+
+      .at-button--primary {
+        background-color: #1091FF;
+      }
+
+      .at-button__text {
+        font-size: 38px;
+      }
+    }
+  }
+}

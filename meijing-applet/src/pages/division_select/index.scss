@@ -1,0 +1,186 @@
+page {
+  width: 100%;
+  height: 100%;
+
+  .root_view {
+    width: 100%;
+    height: 100%;
+
+    .selected_division {
+      height: 96px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .city_select {
+        height: 68px;
+        width: 174px;
+        background: rgba(242, 245, 247, 1);
+        opacity: 1;
+        border-radius: 34px;
+        margin-left: 32px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .picker {
+          height: 68px;
+          width: 174px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
+          .city {
+            font-size: 28px;
+            font-family: PingFang SC;
+            font-weight: 400;
+            color: rgba(65, 79, 112, 1);
+          }
+
+          .icon {
+            margin-left: 10px;
+            width: 28px;
+            height: 23px;
+          }
+        }
+      }
+    }
+
+    .tip {
+      display: inline-block;
+      width: 100%;
+      height: 74px;
+      background: rgba(242, 244, 247, 1);
+      opacity: 1;
+      display: flex;
+      align-items: center;
+
+      .content {
+        margin-left: 32px;
+        font-size: 28px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: rgba(122, 132, 153, 1);
+        opacity: 1;
+      }
+    }
+
+    .division_result {
+      width: 100%;
+      height: calc(100% - 170px);
+
+      .scrollview {
+        width: 100%;
+        height: 100%;
+
+        .division_item {
+          width: 100%;
+          height: 120px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          border-bottom: 1px solid rgba(230, 231, 235, 1);
+
+          .division_name {
+            margin-left: 32px;
+            margin-top: 10px;
+            display: inline-block;
+            font-size: 32px;
+            font-family: PingFang SC;
+            font-weight: 400;
+            color: rgba(16, 31, 66, 1);
+          }
+
+          .address_name {
+            margin-left: 32px;
+            margin-top: 10px;
+            display: inline-block;
+            font-size: 24px;
+            font-family: PingFang SC;
+            font-weight: 400;
+            color: rgba(122, 132, 153, 1);
+          }
+        }
+      }
+    }
+
+    .empty {
+      width: 100%;
+      margin-top: 148px;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+
+      .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+
+        .empty_img {
+          width: 283px;
+          height: 255px;
+          display: inline-block;
+        }
+
+        .top_tip {
+          font-size: 32px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: rgba(178, 184, 198, 1);
+          opacity: 1;
+        }
+
+        .small_tip {
+          margin-top: 10px;
+          font-size: 28px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: rgba(178, 184, 198, 1);
+          opacity: 1;
+        }
+
+        .call_user {
+          margin-top: 46px;
+          width: 296px;
+          height: 84px;
+          background: rgba(255, 255, 255, 1);
+          border: 2px solid rgba(16, 145, 255, 1);
+          opacity: 1;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .group {
+            display: inline-block;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            .call_image {
+              width: 36px;
+              height: 36px;
+              display: inline-block;
+            }
+
+            .call_tip {
+              margin-left: 5px;
+              display: inline-block;
+              font-size: 28px;
+              font-family: PingFang SC;
+              font-weight: 400;
+              color: rgba(16, 145, 255, 1);
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+}

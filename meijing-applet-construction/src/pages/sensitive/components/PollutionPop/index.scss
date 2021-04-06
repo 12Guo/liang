@@ -1,0 +1,50 @@
+@import '../../../../common.scss';
+
+.pollution-pop {
+    position: absolute;
+    bottom: 24px;
+    height: 210px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,0.1);
+    width: calc(100% - 48px);
+    left: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 24px;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        .title {
+            font-size: 36px;
+            font-family: PingFang SC, PingFang SC-Medium;
+            font-weight: 500;
+            color: #101f42;
+        }
+        .time {
+            font-size: 28px;
+            font-family: PingFang SC, PingFang SC-Regular;
+            font-weight: 400;
+            color: #414f70;
+            margin: 16px 0;
+        }
+        .address {
+            font-size: 24px;
+            font-family: PingFang SC, PingFang SC-Regular;
+            font-weight: 400;
+            color: #7a8499;
+        }
+    }
+
+    .pop_img {
+        width: 72px;
+        height: 72px;
+        margin-left: 32px;
+        word-break: break-all;
+        word-wrap: break-word;
+        white-space:normal;
+    }
+}

@@ -1,0 +1,28 @@
+@import '../../../../common.scss';
+
+.my-work {
+    box-sizing: border-box;
+    border-bottom: 2px solid #E6E7EB;
+    margin-top: 30px;
+    &-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title {
+            font-size: 36px;
+            font-family: PingFang SC, PingFang SC-Medium;
+            font-weight: 400;
+            color: #101f42;
+        }
+        .num {
+            font-size: 28px;
+            font-family: PingFang SC, PingFang SC-Medium;
+            font-weight: 500;
+            color: #7a8499;
+            .strong {
+                font-weight: bold;
+                color: #101F42;
+            }
+        }
+    }
+}

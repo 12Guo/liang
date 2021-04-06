@@ -1,0 +1,78 @@
+@import '../../../common.scss';
+
+.list-item {
+    display: flex;
+    align-items: center;
+    height: 202px;
+    box-sizing: border-box;
+    padding: 32px 0;
+    border-bottom: 2px solid #E1E2E6;
+    box-sizing: border-box;
+    align-items: stretch;
+    .left {
+        width: 48px;
+        height: 48px;
+        align-self: flex-start;
+        .img {
+            width: 48px;
+            height: 48px;
+        }
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        flex: 1;
+        justify-content: space-between;
+        .title {
+            font-size: 32px;
+            font-family: PingFang SC, PingFang SC-Medium;
+            font-weight: 500;
+            color: #101f42;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 50vw;
+        }
+        .type {
+            font-size: 28px;
+            font-family: PingFang SC, PingFang SC-Regular;
+            font-weight: 400;
+            color: #414f70;
+        }
+        .distance {
+            font-size: 28px;
+            font-family: PingFang SC, PingFang SC-Regular;
+            font-weight: 400;
+            color: #7a8499;
+        }
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .time {
+            font-size: 28px;
+            font-family: PingFang SC, PingFang SC-Regular;
+            font-weight: 400;
+            color: #7a8499;
+        }
+        .txt {
+            font-size: 28px;
+            font-family: PingFang SC, PingFang SC-Regular;
+            font-weight: 400;
+            color: #7a8499;
+            display: flex;
+            align-items: flex-end;
+            .num {
+                font-size: 48px;
+                font-family: DIN Alternate, DIN Alternate-Bold;
+                font-weight: 700;
+                color: #e84d4d;
+                margin-left: 12px;
+                position: relative;
+                top: 4px;
+            }
+        }
+    }
+}

@@ -1,0 +1,240 @@
+@import '../../common/common.scss';
+
+.content{
+    width: 750px;
+
+    .content_container {
+        padding-bottom: 180px;
+    }
+
+    .contentInputView{
+        width:686px;
+        margin: 20px 32px -20px;
+    }
+
+    .imagePickView_container {
+        box-sizing: border-box;
+        padding: 0 0 0 32px;
+        position: relative;
+        left: -32px;
+        margin-top: 46px;
+    }
+
+    .address_container {
+        box-sizing: border-box;
+        padding: 0 32px;
+    }
+
+    .address{
+        float: left;
+        // width:376px;
+        height:64px;
+        background:rgba(242,244,247,1);
+        opacity:1;
+        border-radius:36px;
+        padding-right: 20px;
+        
+
+        .addressIcon{
+            width:40px;
+            height:40px;
+            margin: 14px 2px 14px 22px;
+            float: left;
+        }
+        .text{
+            min-width: 284px;
+            max-width: 600px;
+            height:64px;
+            font-size:28px;
+            font-family:PingFang SC;
+            font-weight:400;
+            line-height:64px;
+            color:rgba(122,132,153,1);
+            opacity:1;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+            float: left;
+        }
+    }
+
+    .recorderPlay_container {
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    .imagePickView{
+        // height:180px;
+        margin: 0px 8px;
+        padding-bottom: 20px;
+    }
+
+    .replyinfoView{
+        width:750px;
+        opacity:1;
+        margin-bottom: 20px;
+
+        .info_item{
+            margin: 0px 32px;
+            width:686px;
+            height: 120px;
+            border-bottom:1px solid rgba(235,235,235,1);
+            overflow: hidden;
+      
+            .item_left{
+                float: left;
+                // width: 200px;
+                height: 120px;
+                line-height: 120px;
+                text-align: left;
+                margin: 0px 24px;
+                font-size:36px;
+                font-family:PingFang SC;
+                font-weight:400;
+                color:rgba(16,31,66,1);
+                opacity:1;
+            }
+            .item_right{
+                float: right;
+                height:120px;
+                line-height:120px;
+                text-align:right;
+                margin: 0px 24px;
+                font-size:36px;
+                font-family:PingFang SC;
+                font-weight:400;
+                color:rgba(16,31,66,1);
+                opacity:1;
+      
+                .avatar{
+                    float: right;
+                    width:88px;
+                    height:88px;
+                    margin: 16px 5px;
+                    background:rgba(0,0,0,0);
+                    border-radius:50%;
+                    opacity:1;    
+                }
+      
+                .chevron_right{
+                    float: right;
+                    width:16px;
+                    height:29px;
+                    margin: 42px 0px 42px 5px;
+                }
+      
+              .text_right{
+                float: right;
+                height:120px;
+                line-height:120px;
+                font-size:36px;
+                font-family:PingFang SC;
+                font-weight:400;
+                color:#b2b8c6;
+                opacity:1;
+                max-width: 60vw;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                &.choosed{
+                    color:rgba(16,31,66,1);
+                }
+              }
+      
+              .right_input{
+                margin: 12px 0px;
+              }
+            }
+          }
+
+    }
+
+    .noticeView{
+        width:668px;
+        height:40px;
+        margin: 10px 50px 10px 32px;
+        font-size:28px;
+        font-family:PingFang SC;
+        font-weight:400;
+        line-height:36px;
+        color:rgba(122,132,153,1);
+        opacity:1;     
+        padding-bottom: 20px;   
+    }
+
+    .buttonView{
+        height: 144px;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        bottom: 0;
+        background: #ffffff;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        box-sizing: border-box;
+        padding: 0 32px;
+        width: 100%;
+
+        .delButton {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 32px;
+            .txt {
+                font-size: 24px;
+                font-family: PingFang SC, PingFang SC-Regular;
+                font-weight: 400;
+                color: #e84d4d;
+            }
+            .img {
+                display: inline-block;
+                background-image: url(#{$rootUrl}/assets/common/icon-delete.png);
+                background-repeat: no-repeat;
+                width: 36px;
+                height: 36px;
+                background-size: 36px 36px;
+            }
+        }
+    
+        .eidtButton{
+          flex: 1;
+          height:96px;
+          line-height:96px; 
+          background:rgba(16,145,255,1);
+          opacity:1;
+          border-radius:8px;
+          font-size:32px;
+          font-family:PingFang SC;
+          font-weight:500;
+          color:rgba(255,255,255,1);
+        }
+    }
+
+}
+
+page {
+    at-image-picker {
+        .at-image-picker__flex-item {
+            margin-left: 16px;
+
+            &:nth-child(4n+3) {
+                .at-image-picker__item {
+                    width: calc(100% - 2px);
+                }
+            }
+        }
+        .at-image-picker__item {
+            border-radius: 0;
+            overflow: unset;
+            .at-image-picker__remove-btn {
+                top: -10px;
+                right: -10px;
+
+                width:28px;
+                height:28px;
+                background:rgba(16,145,255,1);
+                border-radius:50%;
+            }
+        }
+    }
+}

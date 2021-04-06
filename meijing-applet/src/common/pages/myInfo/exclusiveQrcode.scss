@@ -1,0 +1,134 @@
+page {
+  width: 100%;
+  height: 100%;
+
+  .root_view {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: #f5f6f7;
+
+    .user_info {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 15px;
+      box-sizing: border-box;
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 128px;
+      background: rgba(250,250,250,1);
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items:center;
+
+      .avatar {
+        width:120px;
+        height:120px;
+      }
+      .name {
+        margin-left: 16px;
+        font-size: 48px;
+        font-family: PingFang SC;
+        font-weight: 500;
+        line-height: 154px;
+        color: rgba(16, 31, 66, 1);
+      }
+    }
+
+    .image_group {
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 66px;
+      padding-top: 56px;
+      box-sizing: border-box;
+      width: 80%;
+      margin-left: 10%;
+      background: white;
+
+      .invate {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .divider {
+          flex: 0.4;
+          height: 3px;
+          background: rgba(232, 233, 237, 1);
+          opacity: 1;
+        }
+
+        .invate_title {
+          font-size: 36px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          line-height: 44px;
+          color: rgba(65, 79, 112, 1);
+        }
+      }
+
+      .division_name {
+        margin-top: 30px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-size: 48px;
+        font-family: PingFang SC;
+        font-weight: 500;
+        line-height: 66px;
+        color: rgba(16, 31, 66, 1);
+      }
+
+      .qr_code {
+        margin-top: 50px;
+        width: 100%;
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .qr_image {
+          height: 420px;
+          width: 420px;
+        }
+      }
+
+      .tip {
+        text-align: center;
+        margin-top: 24px;
+        font-size: 28px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        line-height: 40px;
+        color: rgba(122, 132, 153, 1);
+      }
+    }
+
+    .foot_view {
+      width: 100%;
+      height: 96px;
+      position: fixed;
+      bottom: 36px;
+
+      .btn_item {
+        display: inline-block;
+        height: 100%;
+        width: 50%;
+      }
+
+      .at-button--primary {
+        background-color: #1091ff;
+      }
+
+      .at-button__text {
+        font-size: 38px;
+      }
+
+      .view_foot_btn {
+        width: 85%;
+      }
+    }
+  }
+}

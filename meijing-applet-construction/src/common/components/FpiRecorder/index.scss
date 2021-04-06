@@ -1,0 +1,13 @@
+@import '../../common.scss';
+
+.fpi-recorder {
+    .mask {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        background: rgba(0,0,0,.3);
+        z-index: 100;
+    }
+}

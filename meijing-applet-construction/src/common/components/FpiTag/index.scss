@@ -1,0 +1,27 @@
+@import '../../common.scss';
+
+.fpi-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:64px;
+    width: 188px;
+    background:rgba(237,245,252,1);
+    border-radius:8px;
+
+    .icon {
+        display: inline-block;
+        // background-image: url(#{$rootUrl}/assets/common/richInput/label_button.png);
+        width: 36px;
+        height: 36px;
+        background-size: 36px 36px;
+        margin-right: 8px;
+    }
+
+    .text {
+        font-size:28px;
+        font-family:PingFang SC;
+        font-weight:400;
+        color:rgba(65,79,112,1);
+    }
+}

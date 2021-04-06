@@ -1,0 +1,13 @@
+.content {
+    width: 750px;
+    height: 100vh;
+
+    .imageItem{
+        width: 100%;
+        object-fit: contain;
+
+        &.hidden{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,383 @@
+@import '../../common/common.scss';
+
+page {
+  width: 100%;
+  height: 100%;
+
+  .root {
+    width: 100%;
+    height: 100%;
+
+    .space_wrap {
+      width: 100%;
+      height: 25px;
+      background: rgba(242, 244, 247, 1);
+    }
+
+    .air_quality {
+      display: flex;
+      flex-direction: row;
+      height: 90px;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+
+      .localtion {
+        font-size: 44px;
+        color: #101F42;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 320px;
+        font-weight: 500;
+      }
+
+      .update_time {
+        margin-left: 20px;
+        font-size: 26px;
+        color: #7A8499;
+      }
+
+      .reload {
+        margin-left: 20px;
+        display: inline-block;
+      }
+
+      .refresh {
+        margin-left: 10px;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    .time {
+      width: 100%;
+      height: 88px;
+      background: rgba(242, 244, 247, 1);
+
+      .content {
+        margin-left: 20px;
+        text-align: left;
+        line-height: 88px;
+        font-size: 32px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: rgba(65, 79, 112, 1);
+      }
+    }
+
+    .tip_view {
+      height: 80px;
+      font-size: 28px;
+      font-family: PingFang SC;
+      font-weight: 400;
+      line-height: 80px;
+      color: rgba(178, 184, 198, 1);
+      margin-left: 20px;
+    }
+
+    .body {
+      width: 100%;
+      padding: 0px 20px 0px;
+      box-sizing: border-box;
+
+      .head {
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+
+        .aqi_view {
+          width: 100%;
+          height: 80px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: baseline;
+
+          .aqi_view_left {
+            display: inline-block;
+
+            .aqi_value {
+              height: 100%;
+              text-align: end;
+              font-size: 80px;
+              font-family: DIN Alternate;
+              font-weight: bold;
+            }
+
+            .aqi_tip {
+              margin-left: 10px;
+              height: 100%;
+              text-align: end;
+              font-size: 26px;
+              color: #7A8499;
+            }
+          }
+
+          .aqi_view_right {
+            display: inline-block;
+
+            .pollutant_value {
+              color: #FF861D;
+              font-size: 34px;
+              margin-right: 28px;
+            }
+
+            .primary_pollutant {
+              color: #101F42;
+              font-size: 32px;
+              font-family: PingFang SC;
+              font-weight: 400;
+            }
+          }
+        }
+
+        .aqi_value_view {
+          height: 170px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-right: -6px;
+          margin-top: 4px;
+
+          .value_iteam {
+            padding: 10px;
+            box-sizing: border-box;
+            width: 16.6%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .six_pollutant_vale {
+              margin-top: 10px;
+              font-size: 32px;
+              color: #101F42;
+            }
+
+            .six_pollutant_title {
+              width: 100px;
+              margin-top: 10px;
+              padding: 10px;
+              box-sizing: border-box;
+              font-size: 24px;
+              color: white;
+              background: #FF861D;
+              border-radius: 10px;
+              font-family: PingFang SC;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    .weather {
+      width: 100%;
+      padding: 10px 20px 0px;
+      box-sizing: border-box;
+
+
+    }
+
+    .detail {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 40px;
+
+      .weather_list {
+        background-repeat: no-repeat;
+        background-size: 100% 332px;
+        background-image: url(#{$rootUrl}/assets/task_dispatch_detail/weather_bg.png);
+        width: 100%;
+        height: 332px;
+        position: relative;
+
+        .right_tip {
+          position: absolute;
+          display: inline-block;
+          right: 10px;
+          top: calc(50% - 30px);
+          width: 25px;
+          height: 45px;
+        }
+
+        .scrollview {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+
+          .weather_content {
+            padding: 10px;
+            box-sizing: border-box;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            .weather_item {
+              width: 140px;
+              height: 300px;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+
+              .item {
+                font-size: 32px;
+                font-family: PingFang SC;
+                font-weight: 400;
+                line-height: 60px;
+                color: rgba(255, 255, 255, 1);
+                height: 60px;
+                width: 140px;
+                display: inline-block;
+
+                .image {
+                  width: 50px;
+                  height: 50px;
+                  display: inline-block;
+                }
+              }
+
+            }
+          }
+        }
+      }
+
+      .content {
+        margin-top: 20px;
+        font-size: 32px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        line-height: 52px;
+        color: rgba(65, 79, 112, 1);
+
+        View {
+          margin-bottom: 20px;
+          text-indent: 2em;
+          line-height: 200%;
+        }
+
+        .title {
+          color: #414F70;
+          font-size: 32px;
+          font-family: Microsoft YaHei Bold;
+          font-weight: Bold;
+        }
+      }
+    }
+
+    .title {
+      margin-top: 20px;
+      font-size: 36px;
+      font-family: PingFang SC;
+      font-weight: 500;
+      line-height: 36px;
+      color: rgba(16, 31, 66, 1);
+    }
+
+    .dispatch_title {
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 30px;
+      font-size: 42px;
+      color: #101F42;
+      font-family: PingFang SC
+    }
+
+    .map_content {
+      width: 100%;
+      padding: 0px 20px 0px;
+      box-sizing: border-box;
+
+      .title_view {
+        .title {}
+      }
+
+      .map {
+        display: inline-block;
+        margin-top: 20px;
+        width: 100%;
+        height: 424px;
+      }
+    }
+
+    .color_level_-1 {
+      background: #959DAF !important
+    }
+
+    .color_level_0 {
+      background: #74D05E !important
+    }
+
+    .color_level_1 {
+      background: #FFC70B !important
+    }
+
+    .color_level_2 {
+      background: #FF943B !important
+    }
+
+    .color_level_3 {
+      background: #E54848 !important
+    }
+
+    .color_level_4 {
+      background: #66409A !important
+    }
+
+    .color_level_5 {
+      background: #960531 !important
+    }
+
+    .title_color_level_-1 {
+      color: #959DAF !important
+    }
+
+    .title_color_level_0 {
+      color: #74D05E !important
+    }
+
+    .title_color_level_1 {
+      color: #FFC70B !important
+    }
+
+    .title_color_level_2 {
+      color: #FF943B !important
+    }
+
+    .title_color_level_3 {
+      color: #E54848 !important
+    }
+
+    .title_color_level_4 {
+      color: #66409A !important
+    }
+
+    .title_color_level_5 {
+      color: #960531 !important
+    }
+
+
+    .control_message {
+      width: 100%;
+      padding: 0px 20px 0px;
+      box-sizing: border-box;
+
+      .department_item {
+        width: 100%;
+        margin-top: 25px;
+
+        .department {
+          font-size: 36px;
+          font-family: PingFang SC;
+          font-weight: 500;
+          line-height: 36px;
+          color: rgba(16, 31, 66, 1);
+        }
+      }
+    }
+  }
+}

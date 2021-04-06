@@ -1,0 +1,72 @@
+@import '../../../../common.scss';
+
+.ai-tip {
+    position: fixed;
+    bottom: 40px;
+    // width: 100%;
+    left: 0;
+    box-sizing: border-box;
+    padding: 0 32px 0 14px;
+
+    .ai-img {
+        width: 82px;
+        height: 112px;
+        transition: all .3s;
+
+        &--roate {
+            transform: rotate(20deg);
+            margin-left: -56px;
+        }
+    }
+    .ai-container {
+        display: flex;
+        .tip {
+            flex: 1;
+            min-height: 100px;
+            width: calc(100vw - 200px);
+            background: #ffefd1;
+            border-radius: 12px;
+            padding: 20px 10px 16px 30px;
+            position: relative;
+            margin-left: 30px;
+            &:before {
+                content: '';
+                border-style: solid;
+                border-width: 40px;
+                border-color: transparent transparent #ffefd1;
+                position: absolute;
+                left: -20px;
+                bottom: 70px;
+                z-index: -1;
+            }
+
+            &_img {
+                background-image: url(#{$rootConstructionUrl}/assets/pages/index/close.png);
+                background-size: contain;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                top: -20px;
+                right: -20px;
+            }
+
+            &_txt {
+                font-size: 28px;
+                font-family: PingFang SC, PingFang SC-Regular;
+                font-weight: 400;
+                color: #a56216;
+                line-height: 40px;
+
+                .strong {
+                    font-weight: bold;
+                }
+                .link {
+                    color: #0D86FF;
+                }
+            }
+        }
+        .ai-img {
+            align-self: flex-end;
+        }
+    }
+}

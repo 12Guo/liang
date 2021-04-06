@@ -1,0 +1,105 @@
+page {
+  width: 100%;
+  height: 100%;
+
+  .root_view {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: rgba(242, 244, 247, 1);
+
+    .image_group {
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-bottom: 66px;
+      padding-top: 56px;
+      box-sizing: border-box;
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 142px;
+      background: white;
+
+      .invate {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .divider {
+          flex: 0.4;
+          height: 3px;
+          background: rgba(232, 233, 237, 1);
+          opacity: 1;
+        }
+
+        .invate_title {
+          font-size: 32px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          line-height: 44px;
+          color: rgba(65, 79, 112, 1);
+        }
+      }
+
+      .division_name {
+        margin-top: 30px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-size: 48px;
+        font-family: PingFang SC;
+        font-weight: 500;
+        line-height: 66px;
+        color: rgba(16, 31, 66, 1);
+      }
+
+      .qr_code {
+        margin-top: 50px;
+        width: 420px;
+        height: 420px;
+        display: inline-block;
+
+        .qr_image {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .tip {
+        text-align: center;
+        margin-top: 24px;
+        font-size: 28px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        line-height: 40px;
+        color: rgba(122, 132, 153, 1);
+      }
+
+    }
+
+    .foot_view {
+      width: 100%;
+      height: 96px;
+      position: fixed;
+      bottom: 36px;
+
+      .btn_item {
+        display: inline-block;
+        height: 100%;
+        width: 50%;
+      }
+
+      .at-button--primary {
+        background-color: #1091FF;
+      }
+
+      .at-button__text {
+        font-size: 38px;
+      }
+
+      .view_foot_btn {
+        width: 85%;
+      }
+    }
+  }
+}

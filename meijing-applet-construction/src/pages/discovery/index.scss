@@ -1,0 +1,269 @@
+.root {
+  width: 750px;
+  height: 100vh;
+  font-family: PingFang SC;
+  overflow: hidden;
+
+  .head {
+    padding: 0px 32px;
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 30px;
+
+    .air_quality {
+      margin-top: 24px;
+      display: flex;
+      height: 56px;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+
+      .localtion {
+        font-size: 43px;
+        color: #101F42;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 500px;
+        font-weight: 480;
+      }
+
+      .showDetailView{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .txt{
+          height:40px;
+          font-size:28px;
+          font-family:PingFang SC;
+          font-weight:400;
+          line-height:40px;
+          color:rgba(122,132,153,1);
+          opacity:1;              
+        }
+
+        .chevron_right{
+          display: flex;
+        }
+      }
+
+      // .reload {
+      //   margin-left: 20px;
+      //   display: inline-block;
+      // }
+
+      // .refresh {
+      //   margin-left: 10px;
+      //   display: inline-block;
+      //   width: 35px;
+      //   height: 35px;
+      // }
+    }
+
+    .aqi_view {
+      margin-top: 12px;
+      width: 100%;
+      height: 94px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
+      .aqi_view_left {
+        .aqi_value {
+          height: 100%;
+          text-align: end;
+          font-size: 80px;
+          font-family: DIN Alternate;
+          font-weight: bold;
+        }
+
+        .aqi_tip {
+          margin-left: 10px;
+          height: 100%;
+          text-align: end;
+          font-size: 26px;
+          color: #7A8499;
+        }
+      }
+
+      .aqi_view_right {
+        .pollutant_value {
+          color: #FF861D;
+          font-size: 34px;
+          margin-right: 28px;
+        }
+
+        .primary_pollutant {
+          color: #101F42;
+          font-size: 32px;
+          font-family: PingFang SC;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .aqi_value_view {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 28px;
+
+      .value_iteam {
+        height: 98px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .six_pollutant_vale {
+          font-size:32px;
+          font-family:DIN Alternate;
+          font-weight:bold;
+          line-height:28px;
+          color:rgba(16,31,66,1);
+          opacity:1;          
+        }
+
+        .six_pollutant_title {
+          width:94px;
+          height:48px;
+          background:rgba(250,194,6,1);
+          border-radius:8px;
+          font-size:24px;
+          font-family:PingFang SC;
+          font-weight:400;
+          line-height:48px;
+          text-align: center;
+          color:rgba(255,255,255,1);
+        }
+
+      }
+    }
+
+    .update_time {
+      width:100%;
+      height:34px;
+      font-size:24px;
+      font-family:PingFang SC;
+      font-weight:400;
+      line-height:34px;
+      color:rgba(122,132,153,1);
+      opacity:1;
+      text-align: left;
+      margin-top: 24px;
+    }
+
+  }
+
+  .space {
+    width: 100%;
+    height: 24px;
+    background: #F2F4F7
+  }    
+
+  .workListView {
+    width: 100%;
+    height:  99vh;
+  }
+
+  .color_level_-1 {
+    background: #959DAF !important
+  }
+
+  .color_level_0 {
+    background: #74D05E !important
+  }
+
+  .color_level_1 {
+    background: #FFC70B !important
+  }
+
+  .color_level_2 {
+    background: #FF943B !important
+  }
+
+  .color_level_3 {
+    background: #E54848 !important
+  }
+
+  .color_level_4 {
+    background: #66409A !important
+  }
+
+  .color_level_5 {
+    background: #960531 !important
+  }
+
+  .title_color_level_-1 {
+    color: #959DAF !important
+  }
+
+  .title_color_level_0 {
+    color: #74D05E !important
+  }
+
+  .title_color_level_1 {
+    color: #FFC70B !important
+  }
+
+  .title_color_level_2 {
+    color: #FF943B !important
+  }
+
+  .title_color_level_3 {
+    color: #E54848 !important
+  }
+
+  .title_color_level_4 {
+    color: #66409A !important
+  }
+
+  .title_color_level_5 {
+    color: #960531 !important
+  }
+
+  .tool {
+    padding: 30px;
+    box-sizing: border-box;
+
+    .title {
+      font-size: 40px;
+      color: #101F42;
+      text-align: left;
+      font-family: PingFang SC;
+      font-weight: 500;
+      color: rgba(16, 31, 66, 1);
+    }
+
+    .tool_group {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .tool_item {
+        width: 25%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .image {
+          width: 56px;
+          height: 56px;
+        }
+
+        .name {
+          color: #414F70;
+          font-size: 28px;
+          margin-top: 12px;
+          font-family: PingFang SC;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+}

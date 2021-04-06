@@ -1,0 +1,54 @@
+@import '../../../../common.scss';
+
+.date-cycle {
+    width: 100%;
+    height: 104px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 32px;
+
+    .img {
+        background-image: url(#{$rootConstructionUrl}/assets/pages/statistics/icon-right2.png);
+        background-size: contain;
+        width: 32px;
+        height: 32px;
+
+        &--left {
+            transform: rotate(180deg);
+        }
+    }
+
+    .content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        .days-container {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 0 20px;
+            .day {
+                width: 76px;
+                height: 76px;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #B2B8C6;
+                &--active {
+                    background: #edf7ff;
+                    color: #1091FF;
+                }
+            }
+        }
+        .cycle-txt {
+            font-size: 28px;
+            font-family: PingFang SC, PingFang SC-Regular;
+            font-weight: 400;
+            color: #414f70;
+        }
+    }
+}

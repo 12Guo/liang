@@ -1,0 +1,82 @@
+@import '../../common.scss';
+
+.fpi-images {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    background: #000;
+    .list__container {
+        height: calc(100vh - 98px);
+        .list__item {
+            width: 100%;
+            height: calc(100vh - 98px);
+            .img {
+                width: 100%;
+                height: calc(100vh - 98px);
+            }
+        }
+    }
+
+    &__footer {
+        position: fixed;
+        bottom: 0;
+        height:96px;
+        width: 100%;
+        display: flex;
+        .btn-group {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:rgba(34,38,43,1);
+            .icon {
+                display: block;
+                background-image: url(#{$rootUrl}/assets/common/icon-back3.png);
+                width: 56px;
+                height: 56px;
+                background-size: 56px 56px;
+            }
+            .text {
+                font-size:32px;
+                font-family:PingFang SC;
+                font-weight:400;
+                color:rgba(255,255,255,1);
+                margin-left: 6px;
+            }
+
+            &.btn-del {
+                background: #E03434;
+                .icon {
+                    background-image: url(#{$rootUrl}/assets/common/icon-delete3.png);
+                }
+            }
+        }
+    }
+
+    // .list__remove {
+    //     width: 100%;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     height: 96px;
+    //     background:rgba(34,38,43,1);
+
+    //     .img {
+    //         width: 56px;
+    //         height: 56px;
+    //     }
+    // }
+
+    // .list__back {
+    //     position: absolute;
+    //     left: 32px;
+    //     top: 32px;
+    //     .img {
+    //         width: 64px;
+    //         height: 64px;
+    //     }
+    // }
+}

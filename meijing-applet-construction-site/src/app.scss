@@ -1,0 +1,12 @@
+@import "~taro-ui/dist/style/index.scss";
+
+page:before{
+    content: '';
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #EBEBEB;
+    z-index: 9999;
+}

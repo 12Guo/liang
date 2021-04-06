@@ -1,0 +1,182 @@
+@import '../../common.scss';
+
+.fpi-choose {
+    width: 100%;
+    &__header {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 264px;
+        z-index: 999;
+
+        .scrollView {
+            background-color: #ffffff;
+        }
+
+        .navbar {
+            height:88px;
+            background:rgba(255,255,255,1);
+            display: flex;
+            font-size:36px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(122,132,153,1);
+            width: 1200px;
+            box-sizing: border-box;
+            padding-left: 32px;
+
+            &__item {
+                display: flex;
+                align-items: center;
+                color:rgba(122,132,153,1);
+                white-space: nowrap;
+
+                &--nav {
+                    color: #1091FF;
+                    &:after {
+                        content: '>';
+                        display: block;
+                        width:16px;
+                        height:30px;
+                        padding: 0 18px;
+                        line-height: 30px;
+                        color:rgba(122,132,153,1);
+                        margin-top: -4px;
+                    }
+                }
+            }
+        }
+
+        .search {
+            height:96px;
+            background:rgba(255,255,255,1);
+            opacity:1;
+            box-sizing: border-box;
+            padding: 0 32px;
+            display: flex;
+            align-items: center;
+            &__input {
+                height:80px;
+                background-color: rgba(242,244,247,1);
+                opacity:1;
+                box-sizing: border-box;
+                border-radius:40px;
+                padding-left: 72px;
+                background-image: url(#{$rootUrl}/assets/common/search_2.png);
+                background-size: 40px 40px;
+                background-repeat: no-repeat;
+                background-position: 20px 20px;
+                font-size: 32px;
+                font-family:PingFang SC;
+                font-weight:400;
+                width: 100%;
+            }
+            &__placeholder {
+                color:rgba(168,176,191,1);
+            }
+        }
+
+        .check-all {
+            height:80px;
+            background:rgba(242,244,247,1);
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            padding-left: 32px;
+
+            .img {
+                width: 48px;
+                height: 48px;
+                padding: 0 10px;
+            }
+            .txt {
+                font-size:32px;
+                font-family:PingFang SC;
+                font-weight:400;
+                color:rgba(65,79,112,1);
+                margin-left: 20px;
+            }
+
+            &--disabled {
+                opacity: .5;
+            }
+        }
+    }
+
+    &__main {
+        padding: 264px 0 100px;
+        .space {
+            height: 24px;
+            width: 100%;
+            background-color: #F2F5F7;
+
+            &--hide {
+                height: 0;
+            }
+        }
+
+        .check-container {
+            display: none;
+
+            &--checked {
+                display: block;
+            }
+        }
+    }
+
+    &__search {
+        padding: 100px 0 100px;
+        display: none;
+    }
+
+    &__footer {
+        display: flex;
+        height:98px;
+        background:rgba(255,255,255,1);
+        box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        .footer__text {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            padding-left: 32px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(83,98,131,1);
+        }
+
+        .footer__btn {
+            display: flex;
+            align-items: center;
+            height:98px;
+            width: 264px;
+            background:rgba(16,145,255,1);
+            justify-content: center;
+            font-size:32px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(255,255,255,1);
+        }
+    }
+
+    &--search {
+        .fpi-choose__header {
+            height: 88px;
+            .navbar {
+                display: none;
+            }
+            .check-all {
+                display: none;
+            }
+        }
+        .fpi-choose__main {
+            display: none;
+        }
+        .fpi-choose__search {
+            display: block;
+        }
+    }
+}

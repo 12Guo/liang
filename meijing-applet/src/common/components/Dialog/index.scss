@@ -1,0 +1,53 @@
+.shadow {
+    background: rgba(0, 0, 0, 0.4) !important;
+    position  : fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.dialog{
+    width: 80%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 20;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.contain{
+    padding: 20px;
+}
+
+.bottom_button{
+    height: 88px;
+    line-height: 88px;
+    border-top:2px solid #E8EBED;
+}
+
+.confirm{
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: #0D86FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cancel{
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: #000;
+    border-right: 2px solid #E8EBED;
+    box-sizing: border-box;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

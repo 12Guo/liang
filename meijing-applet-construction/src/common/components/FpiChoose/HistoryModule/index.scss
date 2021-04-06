@@ -1,0 +1,57 @@
+.history {
+    box-sizing: border-box;
+    padding: 0 32px;
+    background-color: #fff;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        .txt {
+            font-size: 28px;
+            font-family: PingFang SC, PingFang SC-Regular;
+            font-weight: 400;
+            color: #101f42;
+        }
+        .img {
+            width: 32px;
+            height: 32px;
+            transition: all .3s;
+
+            &__up {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__body {
+        box-sizing: border-box;
+        padding: 10px 0 0;
+        .list-item {
+            background: #f2f4f7;
+            border-radius: 30px;
+            box-sizing: border-box;
+            display: inline-block;
+            min-width: 120px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            margin-right: 16px;
+            margin-bottom: 24px;
+
+            .txt {
+                font-size: 28px;
+                font-family: PingFang SC, PingFang SC-Regular;
+                font-weight: 400;
+                color: #414f70;
+            }
+
+            &__active {
+                background-color: #1091FF;
+                .txt {
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}

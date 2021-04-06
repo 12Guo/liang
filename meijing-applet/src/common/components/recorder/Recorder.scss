@@ -1,0 +1,76 @@
+.recorderView{  
+    width: 750px;
+    z-index: 999;
+    background:rgba(255,255,255,1);
+    display: flex;
+    position: fixed;
+    // margin-left: -32px;
+
+
+    .leftView{
+        display: flex;
+        width: 25%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        .delButton{
+            font-size:36px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(16,31,66,1);
+            opacity:1;                
+        }
+    }
+    
+
+    .recorder{
+        display: flex;
+        // height: 582px;
+        width: 208px;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .times{
+            height:40px;
+            font-size:28px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(83,98,131,1);
+            opacity:1;                
+        }
+        .button{
+            margin: 20px;
+            width: 208px;
+            height: 208px;
+        }
+        .text{
+            height:44px;
+            font-size:32px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(65,79,112,1);
+            opacity:1;
+        }            
+    }
+
+    .rightView{
+        display: flex;
+        width: 25%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .finishButton{
+            font-size:36px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(16,145,255,1);
+            opacity:1;
+        }
+    }
+    
+
+}

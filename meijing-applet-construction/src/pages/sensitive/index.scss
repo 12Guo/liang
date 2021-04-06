@@ -1,0 +1,57 @@
+@import '../../common.scss';
+.sensitive-page {
+    box-sizing: border-box;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    .search-container {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 32px;
+
+        .search-box {
+            flex: 1;
+        }
+
+        .switch-box {
+            display: flex;
+            align-items: center;
+            .icon {
+                display: block;
+                background-image: url(#{$rootConstructionUrl}/assets/pages/sensitive/icon-list.png);
+                width: 48px;
+                height: 48px;
+                background-size: 48px 48px;
+                margin-left: 4px;
+
+                &--map {
+                    background-image: url(#{$rootConstructionUrl}/assets/pages/sensitive/icon-map.png);
+                }
+            }
+        }
+    }
+
+    .body {
+        box-sizing: border-box;
+        flex: 1;
+        .map {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .list {
+            padding: 0 32px;
+        }
+
+        .scrollView {
+            height: calc(100vh - 100px);
+        }
+
+        .empty {
+            padding-top: 200px;
+        }
+    }
+}

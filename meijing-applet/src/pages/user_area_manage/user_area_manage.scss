@@ -1,0 +1,250 @@
+//按钮颜色
+$btn-color: #1091FF;
+//模态对话框颜色
+$model-warn: #414F70;
+//模态对话框body颜色
+$model-body-color: #101F42;
+
+page {
+  height: 100%;
+  width: 100%;
+
+  .root_view {
+    height: 100%;
+    width: 100%;
+
+    .division_none {
+      display: none;
+    }
+
+    .item_active_tip {
+      background: #F29E17;
+      border-top: 1px solid #E6E7EB;
+      height: 80px;
+
+      .select_image {
+        line-height: 80px;
+        height: 80px;
+        margin-left: 20px;
+        vertical-align: middle;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+      }
+
+      .select_tip {
+        line-height: 80px;
+        height: 80px;
+        vertical-align: middle;
+        font-size: 32px;
+        color: white;
+      }
+    }
+
+    .item_head {
+      height: 100px;
+
+      .item_left_title {
+        margin-left: 32px;
+        float: left;
+        height: 100px;
+        font-size: 34px;
+        line-height: 100px;
+        color: #7A8499;
+        vertical-align: middle;
+      }
+
+      .item_icon {
+        margin-right: 32px;
+        float: right;
+        width: 50px;
+        height: 50px;
+        line-height: 100px;
+        vertical-align: middle;
+      }
+
+      .item_right_title {
+        float: right;
+        height: 100px;
+        font-size: 34px;
+        color: #7A8499;
+        line-height: 100px;
+        vertical-align: middle;
+      }
+
+    }
+
+    .address {
+      font-size: 48px;
+      color: #101F42;
+      margin-left: 32px;
+    }
+
+    .space_view {
+      margin-top: 20px;
+      width: 100%;
+      height: 20px;
+      background: #F2F5F7;
+    }
+
+    .item_body {
+      margin-top: 20px;
+      widows: 100%;
+      text-align: center;
+
+      .empty_image {
+        display: inline-block;
+        margin: 0 auto;
+        margin-top: 300px;
+        width: 300px;
+        height: 300px;
+      }
+
+      .scrollview {
+        // width: 666px;
+        // margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0 32px;
+
+        .division_space {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          margin-right: -30px;
+          height: calc(100vh - 350px);
+
+          //激活状态
+          .active_item {
+            background: rgba(255, 255, 255, 1);
+            border: 1px solid rgba(225, 226, 230, 1);
+            opacity: 1;
+            border-radius: 10px;
+          }
+
+          //没有激活状态
+          .un_active_item {
+            background: rgba(242, 244, 247, 1);
+            opacity: 1;
+            border-radius: 10px
+          }
+
+          //待审核状态
+          .ready_approve {
+            background: rgba(247, 242, 237, 1);
+            opacity: 1;
+            border-radius: 10px;
+          }
+
+          //激活状态
+          .border {
+            width: 216px;
+            height: 112px;
+            box-sizing: border-box;
+            margin: 0 19px 24px 0;
+            position: relative;
+
+            .division_item_space {
+              width: 100%;
+              height: 100%;
+            }
+
+            .division_item {
+              width: 100%;
+              height: 112px;
+              // position: relative;
+              box-sizing: border-box;
+              padding-top: 8px;
+              display: flex;
+              align-items: center;
+
+              .division_title {
+                width: 100%;
+                height: 50px;
+                // line-height: 50px;
+                // text-align: center;
+                overflow: hidden;
+                font-size: 32px;
+                color: #101F42;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+
+              .division_count {
+                height: 40px;
+                text-align: center;
+                font-size: 32px;
+                color: #101F42;
+              }
+            }
+
+            .division_image {
+              width: 40px;
+              height: 40px;
+              position: absolute;
+              right: 4px;
+              bottom: 4px;
+            }
+          }
+
+          //
+
+
+        }
+      }
+    }
+
+    .view_foot {
+      border-top: 1px solid #F2F4F7;
+      background: white;
+      width: 100%;
+      height: 120px;
+      line-height: 120px;
+      position: fixed;
+      text-align: center;
+      bottom: 0px;
+      color: #1091FF;
+
+      .view_foot_btn {
+        color: #1091FF;
+        font-size: 36px;
+      }
+
+      .seleted_view {
+        width: 36%;
+        display: inline-block;
+        text-align: center;
+      }
+
+      .seleted_confirm {
+        width: 64%;
+        display: inline-block;
+        text-align: center;
+        background: #1091FF;
+        color: white;
+      }
+    }
+  }
+
+  .model_body {
+    color: $model-body-color;
+    text-align: center;
+    font-size: 16PX;
+    margin-top: 30px;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+  .model_cancel {
+    color: $model-warn;
+    font-size: 16PX
+  }
+
+  .model_confirm {
+    color: $btn-color;
+    font-size: 16PX
+  }
+
+  ::-webkit-scrollbar{
+    width:0px;
+  }
+}

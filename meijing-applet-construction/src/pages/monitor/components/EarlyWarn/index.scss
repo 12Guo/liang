@@ -1,0 +1,75 @@
+@import '../../../../common.scss';
+
+.early-warn {
+    box-sizing: border-box;
+    padding: 40px 32px 40px;
+    .title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title {
+            font-size: 40px;
+            font-family: PingFang SC, PingFang SC-Semibold;
+            font-weight: 600;
+            color: #101f42;
+        }
+    }
+    .body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 18px;
+        .list-item {
+            width: 330px;
+            height: 152px;
+            box-sizing: border-box;
+            background-image: url(#{$rootConstructionUrl}/assets/pages/index/pm2_5.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 26px;
+            padding: 26px;
+            .num {
+                font-size: 48px;
+                font-family: DIN Alternate, DIN Alternate-Bold;
+                font-weight: 700;
+                color: #ffffff;
+            }
+            .label {
+                font-size: 24px;
+                font-family: PingFang SC, PingFang SC-Regular;
+                font-weight: 400;
+                color: #ffffff;
+            }
+
+            &__pm10 {
+                background-image: url(#{$rootConstructionUrl}/assets/pages/index/pm10.png);
+            }
+
+            &__tsp {
+                background-image: url(#{$rootConstructionUrl}/assets/pages/index/tsp.png);
+            }
+
+            &__zaosheng {
+                background-image: url(#{$rootConstructionUrl}/assets/pages/index/zaosheng.png);
+            }
+        }
+    }
+    .bottom {
+        .txt {
+            font-size: 28px;
+            font-family: PingFang SC, PingFang SC-Regular;
+            font-weight: 400;
+            color: #101f42;
+
+            &__bold {
+                font-size: 32px;
+            }
+            &__blue {
+                color: #0D86FF;
+            }
+        }
+    }
+}

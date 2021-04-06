@@ -1,0 +1,30 @@
+.top-bar {
+    background: transparent;
+    &__fixed {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+    }
+    .status {
+        background: transparent;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .img {
+            width: 44px;
+            height: 44px;
+            transform: rotate(90deg);
+            position: absolute;
+            left: 16px;
+        }
+        .txt {
+            font-size:36px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(10,36,99,1);
+        }
+    }
+}

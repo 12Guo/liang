@@ -1,0 +1,45 @@
+@import '../../common/common.scss';
+
+.mark-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 32px;
+  
+  &_header {
+    margin-bottom: 32px;
+    .header_title {
+      font-size:40px;
+      font-family:PingFang SC;
+      font-weight:500;
+      color:rgba(16,31,66,1);
+    }
+  }
+
+  &_body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    // justify-content: space-between;
+    .mark_item {
+      width:212px;
+      height:116px;
+      background:rgba(242,244,247,1);
+      border-radius:8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 28px;
+      margin-right: 26px;
+
+      .txt {
+        font-size:32px;
+        font-family:PingFang SC;
+        font-weight:400;
+        color:rgba(65,79,112,1);
+      }
+    }
+  }
+}

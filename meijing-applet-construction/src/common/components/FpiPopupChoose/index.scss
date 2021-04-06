@@ -1,0 +1,54 @@
+@import '../../common.scss';
+
+.fpi-choose {
+
+    .popUp {
+        height: 80vh;
+        &__header {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            .title {
+                font-size:36px;
+                font-family:PingFang SC;
+                font-weight:500;
+                color:rgba(16,31,66,1);
+            }
+            .close {
+                display: inline-block;
+                background-image: url(#{$rootUrl}/assets/common/icon-close.png);
+                width: 40px;
+                height: 40px;
+                background-size: 40px 40px;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+        }
+
+        &__body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding: 0 40px 32px;
+            .list-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width:216px;
+                height:80px;
+                background:rgba(242,244,247,1);
+                border-radius:8px;
+                margin-bottom: 24px;
+                box-sizing: border-box;
+
+                &.active {
+                    background:rgba(255,255,255,1);
+                    border:2px solid rgba(16,145,255,1);
+                    border-radius:8px;
+                }
+            }
+        }
+    }
+}

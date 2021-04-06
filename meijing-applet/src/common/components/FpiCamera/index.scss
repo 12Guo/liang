@@ -1,0 +1,228 @@
+.fpi-camera {
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+    &__context {
+        flex: 1;
+        position: relative;
+
+        .fpi-camera__canvas {
+            width: 100%;
+            height: calc(100vh - 286px);
+        }
+    }
+
+    .fpi-camera__list {
+        position: absolute;
+        width: 100vw;
+        height: 160px;
+        bottom: -4px;
+        overflow: scroll;
+        .list-container {
+            margin: 0 24px;
+            display: flex;
+            flex-wrap: nowrap;
+            height: 150px;
+            align-items: center;
+            position: absolute;
+            .list__item {
+                position: relative;
+                margin-right: 6px;
+                height: 136px;
+                width: 136px;
+                display: flex;
+                align-items: flex-end;
+                .img {
+                    width:120px;
+                    height:120px;
+                }
+                .icon {
+                    position: absolute;
+                    width:32px;
+                    height:32px;
+                    background:rgba(16,145,255,1);
+                    border-radius:50%;
+                    color:rgba(255,255,255,1);
+                    top: 0px;
+                    right: 0px;
+                    font-size: 20px;
+                    text-align: center;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+
+    &__btns {
+        display: flex;
+        height: 132px;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0 56px;
+        margin-top: 56px;
+
+        &--active {
+            .btn__confirm {
+                visibility: visible !important;
+            }
+        }
+
+        .btn__view {
+            display: block;
+            text-align: left;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(16,31,66,1);
+            flex: 1;
+
+            .view__container {
+                display: flex;
+                align-items: center;
+                .img {
+                    width:104px;
+                    height:104px;
+                    background:rgba(228,232,239,1);
+                    border-radius:12px;
+                }
+                .txt {
+                    font-size:24px;
+                    font-family:PingFang SC;
+                    font-weight:400;
+                    color:rgba(122,132,153,1);
+                    margin-left: 12px;
+                }
+            }
+        }
+
+        .btn__phone {
+            width:132px;
+            height:132px;
+            border:4px solid rgba(16,145,255,1);
+            border-radius:50%;
+            box-sizing: border-box;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                width:104px;
+                height:104px;
+                border-radius: 50%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                background:rgba(16,145,255,1);
+            }
+        }
+
+        .btn__confirm {
+            display: block;
+            visibility: hidden;
+            text-align: right;
+            font-size:36px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(16,145,255,1);
+            flex: 1;
+        }
+    }
+
+    &__tabs {
+        display: flex;
+        height:98px;
+        background:rgba(255,255,255,1);
+        align-items: center;
+        justify-content: center;
+
+        .tab__item {
+            font-size:32px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(122,132,153,1);
+            margin: 0 30px;
+
+            &--active {
+                font-size:36px;
+                font-family:PingFang SC;
+                font-weight:500;
+                color:rgba(16,31,66,1);
+                position: relative;
+
+                &:after {
+                    content: '';
+                    width: 80%;
+                    height: 4px;
+                    position: absolute;
+                    bottom: -18px;
+                    background: #1091FF;
+                    border-radius: 4px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+
+    &__pics {
+        display: none;
+    }
+
+    &--picture {
+        .fpi-camera__context {
+            display: none;
+        }
+        .fpi-camera__list {
+            display: none;
+        }
+        .fpi-camera__btns {
+            display: none;
+        }
+        .fpi-camera__tabs {
+            display: none;
+        }
+        .fpi-camera__pics {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+
+            .list__container {
+                width: 100%;
+                flex: 1;
+                .list__item {
+                    .img {
+                        width: 100%;
+                        height: 100vh;
+                    }
+                }
+            }
+
+            .list__remove {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 96px;
+                background:rgba(34,38,43,1);
+
+                .img {
+                    width: 56px;
+                    height: 56px;
+                }
+            }
+
+            .list__back {
+                position: absolute;
+                left: 32px;
+                top: 32px;
+                .img {
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+        }
+    }
+}

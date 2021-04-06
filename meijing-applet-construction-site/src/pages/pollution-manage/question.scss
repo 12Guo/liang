@@ -1,0 +1,62 @@
+@import '../../common/common.scss';
+
+.question-page {
+  &_header {
+    background-image: url(#{$rootConstructionUrl}/assets/pages/pollution/question_bg.png);
+    height: 196px;
+    width: 100%;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+      font-size: 40px;
+      font-family: PingFang SC, PingFang SC-Medium;
+      font-weight: 500;
+      color: #ffffff;
+      margin-top: -12px;
+      margin-left: 32px;
+      margin-right: 32px;
+      max-height: 100px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      /* autoprefixer: ignore next */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .not-count{
+      color: #ffffff;
+      text-align: center;
+      margin-right: 32px;
+      .not-count-num{
+        font-size: 28PX;
+        font-family: DIN Alternate, DIN Alternate-Bold;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+      .not-count-title{
+        font-size: 12PX;
+        font-family: PingFang SC, PingFang SC-Regular;
+        font-weight: 400;
+      }
+    }
+  }
+  &_body {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 20px 20px 0 0;
+    margin-top: -12px;
+    padding-top: 16px;
+    overflow: hidden;
+
+    .content {
+      height: calc(100vh - 280px);
+        box-sizing: border-box;
+        padding: 0 32px;
+  
+        .empty {
+            padding-top: 200px;
+        }
+    }
+  }
+}

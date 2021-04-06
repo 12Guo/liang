@@ -1,0 +1,92 @@
+.filter{
+    width: 100%;
+    box-sizing: border-box;
+    
+    &__body {
+        width: 100%;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: auto;
+        padding-bottom: 98px;
+        box-sizing: border-box;
+        .container {
+            padding-left: 32px;
+            min-height: 100vh;
+            .module-item {
+                margin-top: 16px;
+                &--line {
+                    position: relative;
+                    margin-bottom: 30px;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        height: 2px;
+                        background: #E1E2E6;
+                        left: 0;
+                        right: 32px;
+                        bottom: -12px;
+                    }
+                }
+                .title {
+                    font-size:36px;
+                    font-family:PingFang SC;
+                    font-weight:500;
+                    color:rgba(16,31,66,1);
+                    display: block;
+                    margin-bottom: 16px;
+                }
+                .list {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    &-item {
+                        width:214px;
+                        height:80px;
+                        background:rgba(242,244,247,1);
+                        border-radius:8px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size:28px;
+                        font-family:PingFang SC;
+                        font-weight:400;
+                        color:rgba(65,79,112,1);
+                        margin: 0 20px 24px 0;
+                        box-sizing: border-box;
+
+                        &.active {
+                            background: #FFFFFF;
+                            border:2px solid rgba(16,145,255,1);
+                            color:rgba(16,145,255,1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height:98px;
+        background:rgba(255,255,255,1);
+        box-shadow:0px 0px 20px rgba(0,0,0,0.1);
+        display: flex;
+        .btn {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            font-size:32px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(83,98,131,1);
+
+            &.confirm {
+                background:rgba(16,145,255,1);
+                color: #FFFFFF;
+            }
+        }
+    }
+}

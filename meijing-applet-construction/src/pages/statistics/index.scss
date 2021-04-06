@@ -1,0 +1,58 @@
+.statistics-page {
+    box-sizing: border-box;
+    background: #ffffff;
+
+    .scrollView {
+        height: calc(100vh - 180px);
+    }
+
+    .body-container {
+        box-sizing: border-box;
+        padding   : 0 32px;
+    }
+}
+
+.site_problem {
+    width           : 100%;
+    border-radius   : 16px;
+    box-shadow      : 0px 8px 32px 0px rgba(0, 0, 0, 0.08);
+    margin-top      : 32px;
+    padding-bottom  : 32px;
+    // padding      : 28px 24px 30px 24px;
+
+    &_header {
+        padding-top: 24px;
+
+        .txt1 {
+            font-size  : 40px;
+            font-family: PingFang SC, PingFang SC-Semibold;
+            font-weight: 600;
+            color      : #101f42;
+            margin-left: 28px;
+        }
+    }
+
+    &_more {
+        font-size      : 28px;
+        font-family    : PingFang SC, PingFang SC-Regular;
+        font-weight    : 400;
+        color          : #0d86ff;
+        display        : flex;
+        justify-content: center;
+    }
+
+    .site_problem_pd {
+        padding: 0 32px;
+    }
+}
+
+.depaerment {
+    padding      : 28px 24px;
+    border-radius: 16px;
+    box-shadow   : 0px 8px 32px 0px rgba(0, 0, 0, 0.08);
+    margin: 32px 0 70px;
+}
+
+.empty {
+    margin: 60px 0 40px;
+}

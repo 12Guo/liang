@@ -1,0 +1,200 @@
+@import '../../common.scss';
+
+.add-page {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0 32px;
+
+  &_body {
+    height: calc(100vh - 144px);
+    &--scroll {
+      height: 100%;
+    }
+    .list-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 116px;
+      border-bottom:2px solid rgba(225,226,230,1);
+      .left {
+        display: flex;
+        align-items: center;
+        &__title {
+          font-size:36px;
+          font-family:PingFang SC;
+          font-weight:400;
+          color:rgba(16,31,66,1);
+        }
+        &__sub {
+          font-size:28px;
+          font-family:PingFang SC;
+          font-weight:400;
+          color:rgba(122,132,153,1);
+          margin-left: 10px;
+        }
+        .required {
+          &:after {
+            content: '*';
+            display: inline-block;
+            font-size:36px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(234,16,16,1);
+            padding-left: 6px;
+          }
+        }
+      }
+
+      .right {
+        &__container {
+          display: flex;
+          align-items: center;
+          .txt {
+            font-size:36px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(65,79,112,1);
+          }
+          .chevron_right {
+            margin-left: 10px;
+            margin-right: -8px;
+          }
+          .input {
+            width: 62vw;
+            text-align: right;
+            font-size:36px;
+            font-family:PingFang SC;
+            font-weight:400;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+          .input__placeholder {
+            color:rgba(178,184,198,1);
+          }
+          .link {
+            font-size:32px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(16,145,255,1);
+          }
+        }
+      }
+
+      &.custom {
+        padding: 30px 0;
+        height: auto;
+        display: block;
+        .list-item__top {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+        }
+        .list-item__body {
+          margin: 0 0 0 -22px;
+
+          &.rich__body {
+            margin: 0;
+            display: none;
+
+            &--show {
+              display: block;
+            }
+          }
+
+          .textarea {
+            background:#fff;
+            width:100%;
+            min-height:80px;
+            font-size:32px;
+            font-family:PingFang SC;
+            font-weight:400;
+            margin-top: 34px;
+          }
+          .textarea__placeholder {
+            color:rgba(178,184,198,1);
+          }
+        }
+      }
+    }
+
+    .list-item-more {
+      display: none;
+
+      &--show {
+        display: block;
+      }
+    }
+  }
+
+  &_footer {
+    height: 144px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn-view {
+      height:96px;
+      line-height: 96px;
+      width: 100%;
+      background:rgba(16,145,255,1);
+      border-radius:8px;
+      font-size:32px;
+      font-family:PingFang SC;
+      font-weight:500;
+      color:rgba(255,255,255,1);
+    }
+  }
+
+  .curtain_container {
+    // width:540px;
+    border-radius:24px;
+    overflow: hidden;
+    .curtain__title {
+      background:rgba(255,255,255,1);
+      display: block;
+      height: 96px;
+      line-height: 96px;
+      text-align: center;
+      font-size:28px;
+      font-family:PingFang SC;
+      font-weight:400;
+      color:rgba(65,79,112,1);
+    }
+    .curtain__img {
+      width: 100%;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    opacity: 0;
+    width: 0;
+  }
+}
+
+page {
+  at-image-picker {
+      .at-image-picker__flex-item {
+          margin-left: 16px;
+
+          &:nth-child(4n+3) {
+              .at-image-picker__item {
+                  width: calc(100% - 2px);
+              }
+          }
+      }
+      .at-image-picker__item {
+          border-radius: 0;
+          overflow: unset;
+          .at-image-picker__remove-btn {
+              top: -8px;
+              right: -8px;
+
+              width:28px;
+              height:28px;
+              background:rgba(16,145,255,1);
+              border-radius:50%;
+          }
+      }
+  }
+}

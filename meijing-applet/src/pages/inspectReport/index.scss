@@ -1,0 +1,37 @@
+.content{
+    width: 750px;
+
+    .reportTypeListView{
+        margin: 0px 32px;
+        display: flex;
+        justify-content: center;
+
+
+        .reportTypeView{
+            width: 196px;
+            height: 216px;
+            margin: 32px 14px 32px 14px;
+
+            .icon{
+                width: 196px;
+                height: 196px;
+                display: block;
+            }
+
+            .text{
+                display: block;
+                position: relative;
+                margin: -22px 34px 0px 34px;
+                width:128px;
+                height:44px;
+                font-size:32px;
+                font-family:PingFang SC;
+                font-weight:400;
+                line-height:40px;
+                color:rgba(27,46,89,1);
+                opacity:1;
+            }
+        }
+    }
+
+}

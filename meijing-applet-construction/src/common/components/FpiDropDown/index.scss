@@ -1,0 +1,72 @@
+@import '../../common.scss';
+
+.drop-down-box {
+    position: relative;
+    // z-index: 98;
+    .mask {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        display: none;
+        &.show {
+            background: transparent;
+            z-index: 99;
+            display: block;
+        }
+    }
+    .item-show {
+        display: flex;
+        align-items: center;
+        width:184px;
+        height:68px;
+        background:rgba(242,245,247,1);
+        border-radius:34px;
+        justify-content: center;
+        z-index: 98;
+        .label {
+            font-size:28px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(65,79,112,1);
+        }
+        .icon {
+            display: block;
+            background-image: url(#{$rootUrl}/assets/pollution-manage/choose.png);
+            width: 28px;
+            height: 22px;
+            background-size: 28px 22px;
+            margin-left: 10px;
+        }
+    }
+    .list-content {
+        position: absolute;
+        background: #fff;
+        left: 0;
+        top: 80px;
+        width:184px;
+        background:rgba(255,255,255,1);
+        box-shadow:0px 4px 12px rgba(0,0,0,0.24);
+        display: none;
+        flex-direction: column;
+        z-index: 101;
+        &.open {
+            display: flex;
+        }
+        
+        .list-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 68px;
+            font-size:28px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(16,31,66,1);
+            &.active {
+                color: #1091FF;
+            }
+        }
+    }
+}

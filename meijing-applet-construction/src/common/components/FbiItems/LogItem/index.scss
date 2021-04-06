@@ -1,0 +1,119 @@
+@import '../../../common.scss';
+
+.list-item {
+    border-bottom:2px solid rgba(230,231,235,1);
+    box-sizing: border-box;
+    margin-left: 32px;
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-bottom: 20px;
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      .list-item__time {
+        font-size:28px;
+        font-family:PingFang SC;
+        font-weight:400;
+        color:rgba(122,132,153,1);
+      }
+      .list-item__detail {
+        display: flex;
+        align-items: center;
+        font-size:28px;
+        font-family:PingFang SC;
+        font-weight:400;
+        color:rgba(122,132,153,1);
+
+        .list-item__arrow {
+          margin-left: 16px;
+          display: block;
+          margin-top: -4px;
+        }
+      }
+    }
+
+    &__body {
+      .list-item__title {
+        font-size:32px;
+        font-family:PingFang SC;
+        font-weight:400;
+        color:rgba(16,31,66,1);
+        // height: 60px;
+        line-height: 60px;
+        padding-left: 20px;
+
+        .inspectType {
+          margin-left: -20px;
+        }
+
+        .content {
+          display: block;
+          margin-bottom: 8px;
+          text {
+            line-height: 12px;
+          }
+        }
+      }
+      .list-item__photos {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 20px;
+        .img {
+          width: 208px;
+          height: 208px;
+          margin-right: 14px;
+          margin-bottom: 18px;
+        }
+      }
+    }
+
+    &__footer {
+      .list-item__address {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        .icon {
+          display: inline-block;
+          background-image: url(#{$rootUrl}/assets/common/icon-address.png);
+          background-repeat: no-repeat;
+          width: 40px;
+          height: 30px;
+          background-size: 30px 30px;
+          margin-left: 12px;
+          margin-top: 4px;
+          align-self: flex-start;
+        }
+        .text {
+          font-size:28px;
+          font-family:PingFang SC;
+          font-weight:400;
+          color:rgba(122,132,153,1);
+          margin-left: 6px;
+        }
+      }
+
+      .list-item__tags {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10px;
+
+        .tag-item {
+          height:56px;
+          background:rgba(242,244,247,1);
+          border-radius:36px;
+          margin-right: 12px;
+          margin-bottom: 12px;
+          display: flex;
+          align-items: center;
+
+          .text {
+            font-size:28px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(122,132,153,1);
+            padding: 0 26px;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,93 @@
+@import '../../common/common.scss';
+
+page {
+  width: 100%;
+  height: 100%;
+
+  .root_view {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,#2a7bfc -1%, #32b6fd);
+
+    .head {
+      height: 800px;
+      width: 100%;
+
+      .img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .img_info {
+        width: 640px;
+        height: 156px;
+        margin: -80px 0 0 55px;
+      }
+    }
+
+    .body {
+      padding-bottom: 160px;
+      width: 100%;
+      position: fixed;
+      bottom: 0px;
+      background-image: url(#{$rootConstructionUrl}/assets/pages/login/logo-bottom.png);
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+      .loginBtn {
+        width: 520px;
+        height: 96px;
+        line-height: 96px;
+        background: #ffffff;
+        border-radius: 48px;
+        font-size: 32px;
+        font-family: PingFang SC, PingFang SC-Medium;
+        font-weight: 500;
+        text-align: center;
+        color: #3d7ee6;
+      }
+
+      .register {
+        width: 85%;
+        height: 40PX;
+        line-height: 40PX;
+        font-size: 16PX;
+        margin-top: 18px;
+        border: 1PX solid #1091FF;
+        color: #1091FF
+      }
+
+      .phoneLogin {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        font-size: 14PX;
+        font-family: PingFang SC;
+        font-weight: 400;
+        line-height: 48px;
+        color: rgba(122, 132, 153, 1);
+        margin-top: 58px;
+      }
+    }
+
+    .model_warn {
+      color: #414F70;
+      font-size: 18PX
+    }
+
+    .model_body {
+      color: #101F42;
+      font-size: 16PX
+    }
+
+    .model_cancel {
+      color: #414F70;
+      font-size: 16PX
+    }
+
+    .model_confirm {
+      color: #1091FF;
+      font-size: 16PX
+    }
+  }
+}

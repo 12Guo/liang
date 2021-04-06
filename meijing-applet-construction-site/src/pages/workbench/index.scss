@@ -1,0 +1,161 @@
+.work-page {
+    box-sizing: border-box;
+    background-color: #4674F2;
+
+    .work-details {
+        // height: 606px;
+        padding:  0 32px;
+
+        .weather-detail{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 240px;
+            color: #ffffff;
+            
+            .detail-text{
+                opacity: 0.9;
+                font: normal 14PX PingFang SC, PingFang SC-Regular;
+                line-height: 22PX;
+                position: relative;
+                word-break: break-all;
+                word-wrap: break-word;
+                letter-spacing: 1px;
+                width: 422px;
+                height: 217px;
+
+                .more{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+
+            .radar-box{
+                width: 110PX;
+                height: 110PX;
+                background-color: #4572ED;
+                border-radius: 50%;
+                position: relative;
+                overflow: hidden;
+                transform: rotate(0deg); /* 针对mac safari浏览器兼容 */
+
+                .radar-map{
+                    width: 110PX;
+                    height: 110PX;
+                }
+
+                .radar-overflow{
+                    position: absolute;
+                    overflow: hidden;
+                    border-radius: 50%;
+                }
+
+                .sactor{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 50%;
+                    height: 50%;
+                    background-color: #2CFBFF;
+                    transform-origin: 0% 100%;
+                }
+
+                .east{
+                    transform: rotate(-105deg) skewY(-60deg);
+                }
+
+                .east-north{
+                    transform: rotate(210deg) skewY(-60deg);
+                }
+
+                .east-south{
+                    transform: rotate(-60deg) skewY(-60deg);
+                }
+
+                .south{
+                    transform: rotate(-15deg) skewY(-60deg);
+                }
+
+                .north{
+                    transform: rotate(165deg) skewY(-60deg);
+                }
+
+                .west-south{
+                    transform: rotate(30deg) skewY(-60deg);
+                }
+
+                .west{
+                    transform: rotate(75deg) skewY(-60deg);
+                }
+
+                .west-north{
+                    transform: rotate(120deg) skewY(-60deg);
+                }
+
+                .position-dot{
+                    width: 6PX;
+                    height: 6PX;
+                    border-radius: 50%;
+                    background-color: #FF3F52;
+                    position: absolute;
+                    z-index: 2;
+                }
+                .dot{
+                    top: 50%;
+                    left: 50%;
+                }
+            }
+        }
+    }
+
+    .select_options {
+        padding   : 0 32px;
+        margin-bottom: 126px;
+        border-radius: 30px 30px 0 0 ;
+        background-color: #fff;
+        .title {
+            height     : 112px;
+            line-height: 112px;
+            margin-top : 36px;
+
+            .txt1 {
+                font-size  : 40px;
+                font-family: PingFang SC, PingFang SC-Semibold;
+                font-weight: 600;
+                text-align : left;
+                color      : #101f42;
+
+            }
+        }
+
+        .options_box {
+            display  : flex;
+            flex-wrap: wrap;
+
+            .option_item {
+                display        : flex;
+                flex-direction : column;
+                width          : 25%;
+                justify-content: center;
+                align-items    : center;
+                padding: 30px 0 0;
+
+                .txt2 {
+                    font-size  : 28px;
+                    font-family: PingFang SC, PingFang SC-Regular;
+                    font-weight: 400;
+                    text-align : center;
+                    color      : #414f70;
+                }
+
+                .img1 {
+                    width        : 56px;
+                    height       : 56px;
+                    margin-bottom: 12px;
+                }
+
+            }
+        }
+    }
+}

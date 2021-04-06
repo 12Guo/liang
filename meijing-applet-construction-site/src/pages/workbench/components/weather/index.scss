@@ -1,0 +1,36 @@
+.weather-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 108px;
+    color: #ffffff;
+    margin-bottom: 20px;
+
+    .weather-left{
+        display: flex;
+        .weather-img{
+            width: 76px;
+            height: 76px;
+        }
+        .weather-du{
+            font: bold 20PX DIN Alternate, DIN Alternate-Bold;
+            margin-left: 32px;
+            line-height: 76px;
+        }
+    }
+
+    .weather-right{
+        .weather-name{
+            font: normal 14PX PingFang SC, PingFang SC-Regular;
+            margin-left: 30px;
+            line-height: 76px;
+        }
+        .weather-number{
+            font: bold 16PX DIN Alternate, DIN Alternate-Bold;
+            line-height: 76px;
+            margin-left: 16px;
+        }
+    }
+
+}

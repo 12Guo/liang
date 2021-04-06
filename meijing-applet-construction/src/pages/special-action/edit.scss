@@ -1,0 +1,74 @@
+
+.action-edit-page {
+    box-sizing: border-box;
+    padding: 0 32px;
+
+    .action-form {
+        .item {
+            display: flex;
+            height: 112px;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #E1E2E6;
+
+            &_label {
+                font-size:36px;
+                font-family:PingFang SC;
+                font-weight:400;
+                color:rgba(16,31,66,1);
+            }
+
+            &_input {
+                width: 450px;
+                font-size:36px;
+                font-family:PingFang SC;
+                font-weight:400;
+            }
+
+            .text_right {
+                font-size:36px;
+                font-family:PingFang SC;
+                font-weight:400;
+
+                &.gray {
+                    color:rgba(178,184,198,1);
+                }
+            }
+
+            .input-placeholder {
+                color:rgba(178,184,198,1);
+                text-align: right;
+            }
+        }
+
+        .muti {
+            margin-top: 20px;
+            flex-direction: column;
+            align-items: flex-start;
+            border-bottom: none;
+
+            .item_input {
+                min-height: 200px;
+                border: none;
+                outline: none;
+                width: 100%;
+                margin-top: 16px;
+            }
+        }
+    }
+    .submit-btn {
+        position: fixed;
+        width: calc(100% - 64px);
+        bottom: 24px;
+        box-sizing: border-box;
+        
+        .btn {
+            height:96px;
+            background:rgba(16,145,255,1);
+            border-radius:8px;
+            border: none;
+            outline: none;
+            line-height: 96px;
+        }
+    }
+}

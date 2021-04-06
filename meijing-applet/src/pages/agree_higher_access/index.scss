@@ -1,0 +1,124 @@
+//按钮颜色
+$btn-color: #1091FF;
+//模态对话框颜色
+$model-warn: #414F70;
+//模态对话框body颜色
+$model-body-color: #101F42;
+
+page {
+  width: 100%;
+  height: 100%;
+
+  .root_view {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    .logo {
+      margin-top: 12%;
+      height: 200px;
+      width: 100%;
+      text-align: center;
+
+      .image {
+        height: 200px;
+        width: 180px;
+      }
+    }
+
+    .tip {
+      margin-top: 30px;
+      text-align: center;
+      height: 100px;
+      line-height: 100px;
+      color: #0A2463;
+      font-size: 46px;
+    }
+
+    .agree_status{
+        text-align: center;
+        color: #7A8499;
+        font-size: 36px;
+    }
+
+    .detail {
+      text-align: center;
+      padding: 30px;
+      color: #414F70;
+      font-size: 36px;
+      line-height: 54px;
+    }
+
+    .model_body {
+      color: $model-body-color;
+      text-align: center;
+      font-size: 16PX;
+      margin: 0 auto;
+    }
+
+    .model_cancel {
+      color: $model-warn;
+      font-size: 16PX
+    }
+
+    .model_confirm {
+      color: $btn-color;
+      font-size: 16PX
+    }
+
+    .btn {
+      width: 100%;
+      height: 100px;
+      position: fixed;
+      bottom: 30px;
+      text-align: center;
+
+      .view_foot_btn {
+        width: 92%;
+        height: 100%;
+      }
+
+      .at-button--primary {
+        background-color: #1091FF;
+      }
+
+      .at-button__text {
+        font-size: 38px;
+      }
+    }
+
+    .btn_on_notagree {
+      width: 100%;
+      height: 100px;
+      position: fixed;
+      bottom: 30px;
+
+      .close {
+        display: inline-block;
+        height: 100%;
+        width: 50%;
+      }
+
+      .back {
+        display: inline-block;
+        height: 100%;
+        width: 50%;
+
+      }
+
+      .at-button--primary {
+        background-color: #1091FF;
+      }
+
+      .at-button__text {
+        font-size: 38px;
+      }
+
+      .view_foot_btn {
+        width: 90%;
+      }
+    }
+
+  }
+}

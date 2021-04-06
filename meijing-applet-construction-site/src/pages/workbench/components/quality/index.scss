@@ -1,0 +1,106 @@
+.numberical{
+    display: flex;
+    justify-content: space-around;
+    height: 240px;
+    margin-bottom: 14px;
+    padding-top: 30px;
+
+    .numberical-left{
+        width: 240px;
+        height: 240px;
+        
+        .aqi{
+            font-size: 14PX;
+            font-family: PingFang SC, PingFang SC-Regular;
+            color: #ffffff;
+            .aqi-number{
+                font-size: 52PX;
+                font-family: DIN Alternate, DIN Alternate-Bold;
+                font-weight: 700;
+                letter-spacing: -3px;
+                margin-right: 2px;
+                
+            }
+        }
+        .pollution-deep{
+            padding: 6px 18px;
+            font-size: 14PX;
+            text-align: center;
+            color: #ffffff;
+            border-radius: 6px;
+            background-color: #FF861D;
+        }
+        .title_color_level_-1 {
+            background-color: #959DAF;
+        }
+    
+        .title_color_level_0 {
+            background-color: #74D05E;
+        }
+    
+        .title_color_level_1 {
+            background-color: #FFC70B;
+        }
+    
+        .title_color_level_2 {
+            background-color: #FF943B;
+        }
+    
+        .title_color_level_3 {
+            background-color: #E54848;
+        }
+    
+        .title_color_level_4 {
+            background-color: #66409A;
+        }
+    
+        .title_color_level_5 {
+            background-color: #960531;
+        }
+    }
+
+    .numberical-right{
+        margin-left: 30px;
+        height: 240px;
+        flex: 1;
+        .time{
+            opacity: 0.8;
+            font-size: 12PX;
+            font-family: PingFang SC, PingFang SC-Regular;
+            font-weight: 400;
+            text-align: right;
+            color: #ffffff;
+            letter-spacing: 0px;
+            margin: 10px 0 36px;
+        }
+        ul{
+            height: 110px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            li{
+                .type-number{
+                    font-size: 24PX;
+                    font-family: DIN Alternate, DIN Alternate-Bold;
+                    font-weight: 700;
+                    text-align: center;
+                    color: #ffffff;
+                    letter-spacing: 0px;
+                    margin-bottom: 15px;
+                }
+                .type-name{
+                    height: 20px;
+                    opacity: 0.8;
+                    font-size: 14PX;
+                    font-family: PingFang SC, PingFang SC-Regular;
+                    font-weight: 400;
+                    text-align: center;
+                    color: #ffffff;
+                    line-height: 9PX;
+                    letter-spacing: 0px;
+                }
+            }
+        }
+    }
+}

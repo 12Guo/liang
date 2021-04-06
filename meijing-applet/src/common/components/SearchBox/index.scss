@@ -1,0 +1,27 @@
+.search-box {
+    height:96px;
+    background:rgba(255,255,255,1);
+    opacity:1;
+    box-sizing: border-box;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    .input {
+        height:80px;
+        background-color: rgba(242,244,247,1);
+        opacity:1;
+        box-sizing: border-box;
+        border-radius:40px;
+        padding-left: 72px;
+        background-size: 40px 40px;
+        background-repeat: no-repeat;
+        background-position: 20px 20px;
+        font-size: 32px;
+        font-family:PingFang SC;
+        font-weight:400;
+        width: 100%;
+    }
+    .input-placeholder {
+        color:rgba(168,176,191,1);
+    }
+}

@@ -1,0 +1,294 @@
+@import '../../common/common.scss';
+
+.content{
+    height: 100vh;
+    background:rgba(255,255,255,1);
+
+    .topTabView{
+        width:750px;
+        height:80px;
+        background:rgba(255,255,255,1);
+        opacity:1;
+
+
+        .left{
+            margin: 0px 42px 0px 198px;
+        }
+        .right{
+            margin: 0px 42px;
+        }
+
+        .tabView{
+            display: inline-block;
+            position: relative;
+            height:80px;
+
+            .tabSelected{
+                font-size:36px;
+                font-family:PingFang SC;
+                font-weight:500;
+                line-height:80px;
+                color:rgba(16,31,66,1);
+                opacity:1;
+    
+                &::after {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    width: 60px;
+                    height: 4px;
+                    background:  rgba(16,145,255,1);
+                    content: '';
+                    transform: translate(-50%, 0)
+                }
+            }
+
+            .tab{
+                margin: 18px 38px;
+                font-size:32px;
+                font-family:PingFang SC;
+                font-weight:400;
+                line-height:80px;
+                color:rgba(122,132,153,1);
+                opacity:1;
+            }
+        }
+
+    }
+
+    .tabContent{
+        height: calc(100vh - 110px);
+
+        .imageItem-container {
+            width:750px;
+            height:100% !important;
+        }
+
+        .images{
+            margin: 5px 0px;
+            
+            .imageItem{
+                width:750px;
+                object-fit: contain;
+            }
+        }
+
+        .contentItem{
+            width: 686px;
+            margin: 0px 30px 0px 34px;
+            &.pd {
+                margin-left: 0;
+            }
+
+            &.contentItemList {
+                margin-bottom: 30px;
+            }
+        }
+
+        .splitBorderBottom{
+            border-bottom:1px solid rgba(225,226,230,1);
+        }
+
+       .pollutionType{
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .imageItem{
+                float: left;
+                width:59px;
+                height:53px;
+            }
+            .pollutionSourceTitle{
+                float: left;
+                font-size:36px;
+                font-family:PingFang SC;
+                font-weight:500;
+                color:rgba(16,31,66,1);
+                opacity:1;
+                margin-left: 20px;
+            }
+            .yxfxButton{
+                float: right;
+                font-size:32px;
+                font-family:PingFang SC;
+                font-weight:400;
+                line-height:80px;
+                color:rgba(239,138,0,1);
+                opacity:1;                
+            }
+
+            .title-container {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .contentAndVoiceView{
+            box-sizing: border-box;
+            padding: 32px 0px;
+
+            .contentView{
+                height:auto;
+                font-size:32px;
+                font-family:PingFang SC;
+                font-weight:400;
+                color:rgba(16,31,66,1);
+                opacity:1;
+    
+                .inspectType{
+                    padding: 0 16px;
+                    height: 48px;
+                    font-size:28px;
+                    font-family:PingFang SC;
+                    font-weight:400;
+                    line-height:48px;
+                    color:rgba(122,132,153,1);
+                    background:rgba(242,244,247,1);
+                    opacity:1;
+                    border-radius:28px;
+                    margin-right: 6px;                    
+                }
+            }
+    
+            .voiceView{
+                margin: 32px 30px 0px 0px;
+
+                .voice{
+                    width:200px;
+                    height:80px;
+                    background:rgba(224,241,255,1);
+                    opacity:1;
+                    border-radius:16px;
+        
+                    .voiceIcon{
+                        float: left;
+                        width:44px;
+                        height:44px;
+                        margin: 18px 16px 18px 16px;
+                    }
+                    .voiceLength{
+                        float: left;
+                        margin: 22px 16px 20px 0px;
+                        width:44px;
+                        height:38px;
+                        font-size:28px;
+                        font-family:Arial Unicode MS;
+                        font-weight:400;
+                        line-height:38px;
+                        color:rgba(51,51,51,1);
+                        opacity:1;                    
+                    }
+                }
+            }
+        }
+        
+        .propertyItem{
+            width: 686px;
+            height: 64px;
+            margin: 16px 0;
+
+            .address {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                .propertyIcon{
+                    width: 30px;
+                    height: 30px;
+                    margin-top: 24px;
+                }
+            }
+
+            .propertyIcon{
+                float: left;
+                width: 40px;
+                height: 40px;
+                margin: 12px;
+                margin-left: 0;
+            }
+
+            .propertyName{
+                float: left;
+                height:44px;
+                font-size:32px;
+                font-family:PingFang SC;
+                font-weight:400;
+                line-height:64px;
+                color:rgba(16,31,66,1);
+                opacity:1;
+            }
+
+            .propertyValue{
+                float: right;
+                height:44px;
+                font-size:32px;
+                font-family:PingFang SC;
+                font-weight:400;
+                // line-height:64px;
+                color:rgba(122,132,153,1);
+                opacity:1;
+                max-width: 400px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                margin-top: 10px;
+            }
+
+            .photos{
+                float: right;
+                margin-right: 20px;
+                height:64px;
+
+                .avatar{
+                    float: right;
+                    position: relative;
+                    margin-right: -20px;
+                    width:64px;
+                    height:64px;
+                    background:rgba(0,0,0,0);
+                    border-radius:50%;
+                    opacity:1;
+                }
+            }
+        }
+
+        .splitView{
+            width:750px;
+            height:24px;
+            background:rgba(242,245,247,1);
+            opacity:1;         
+        }
+
+        .mapView{
+            box-sizing: border-box;
+            margin: 0px 32px;
+            height: 400px; 
+            position: relative;
+
+            .title{
+                max-width: 40vw;
+                height: 60px;
+                text-align: left;
+                font-size:36px;
+                font-family:PingFang SC;
+                font-weight:400;
+                color:rgba(16,31,66,1);
+                opacity:1;                
+            }
+
+            .impactDetailIcon{
+                z-index: 102;
+                width: 72px;
+                height: 72px;
+                position: absolute;
+                right: 16px;
+                bottom: 22px;
+            }
+        }
+
+    }
+
+   
+}

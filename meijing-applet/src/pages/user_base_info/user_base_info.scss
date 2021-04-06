@@ -1,0 +1,301 @@
+//指示器激活时的颜色
+$step-active-color: #57A6FF;
+//指示器没有激活时的颜色
+$step-number-color: #007BE3;
+//表单名称颜色
+$item-title-color: #101F42;
+//表单填充色
+$item-gray-color: #B2B8C6;
+
+.bg-view {
+
+  .layout-body {
+    font-size: 32px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    line-height: 48px;
+    color: rgba(65, 79, 112, 1);
+  }
+
+  //进度条
+  .step {
+    background-color: #107EFF;
+
+    .at-steps__item--active {
+      .at-steps__circular {
+        background: white
+      }
+
+      .at-steps__num {
+        color: $step-number-color
+      }
+
+      .at-steps__right-line {
+        background-color: $step-active-color
+      }
+
+      .at-steps__left-line {
+        background-color: $step-active-color
+      }
+    }
+
+    .at-steps__item--inactive {
+      .at-steps__circular {
+        background: $step-active-color
+      }
+
+      .at-steps__num {
+        color: $step-number-color
+      }
+
+      .at-steps__right-line {
+        background-color: $step-active-color
+      }
+
+      .at-steps__left-line {
+        background-color: $step-active-color
+      }
+    }
+
+    .at-steps__title {
+      color: white;
+    }
+  }
+
+  .bg_body {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .margin_top_10 {
+      margin-top: 10px;
+    }
+
+    .border {
+      height: 1px;
+      border-bottom: 1px solid #EBEBEB;
+    }
+
+    .errorTip {
+      color: red;
+      font-size: 32px;
+    }
+
+    .item_view {
+      height: 120px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      .required label::after {
+        content: "*";
+        color: red;
+      }
+
+      .at-input--disabled {
+        opacity: 1
+      }
+
+      .at-input__input {
+        color: #101F42;
+        font-size: 38px;
+        text-align: right
+      }
+
+      .item_input_special {
+        vertical-align: middle;
+        // width: 90%;
+        color: $item-title-color;
+        text-align: right;
+        // display: inline-block;
+        flex: 1;
+
+        .at-input__title {
+          font-size: 38px;
+        }
+      }
+
+      .item_input_name {
+        vertical-align: middle;
+        width: 90%;
+        display: inline-block;
+
+        .at-input__title {
+          font-size: 38px;
+        }
+      }
+
+      .item_left {
+        vertical-align: middle;
+        width: 50%;
+        height: 120px;
+        text-align: left;
+        display: inline-block;
+
+        .item_left_title_special {
+          height: 120px;
+          width: 80%;
+          font-size: 46px;
+          color: $item-title-color;
+          line-height: 120px;
+          text-align: left;
+          display: inline-block;
+        }
+
+        .item_left_title {
+          height: 120px;
+          width: 80%;
+          font-size: 38px;
+          color: $item-title-color;
+          line-height: 120px;
+          // margin-left: 10px;
+          text-align: left;
+          display: inline-block;
+        }
+      }
+
+      .item_right {
+        vertical-align: middle;
+        width: 50%;
+        height: 120px;
+        display: inline-block;
+        text-align: right;
+
+        .item_right_phone {
+          width: 100%;
+          line-height: 120px;
+          text-align: right;
+          font-size: 38px;
+          display: inline-block;
+          color: $item-gray-color
+        }
+
+        .item_right_input {
+          width: 100%;
+          line-height: 120px;
+          text-align: right;
+          display: inline-block;
+
+          .at-input__input {
+            text-align: right;
+            font-size: 38px;
+            color: $item-gray-color
+          }
+        }
+
+        .item_right_info {
+          height: 120px;
+          width: 100%;
+          color: $item-title-color;
+          line-height: 120px;
+          font-size: 38px;
+          text-align: right;
+          display: inline-block;
+        }
+
+        .item_avatar {
+          margin-top: 10px;
+          width: 100px;
+          height: 100px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+
+      .item_icon {
+        vertical-align: middle;
+        width: 5% !important;
+        height: 120px;
+        display: inline-block;
+        text-align: center;
+
+        .item_icon_style {
+          display: inline-block;
+          line-height: 120px;
+        }
+      }
+
+    }
+
+  }
+
+  .view_foot {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+
+    .view_foot_btn {
+      display: inline-block;
+      width: 95%;
+      height: 90px;
+    }
+
+    .at-button--primary {
+      background-color: #1091FF;
+    }
+
+    .at-button__text {
+      font-size: 38px;
+    }
+
+    .readDoc {
+      text-align: left;
+      font-size: 32px;
+      height: 60px;
+
+      .checkedImage {
+        vertical-align: middle;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin-left: 20px
+      }
+
+      .doc_tip {
+        margin-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+
+        .doc_tip_blue {
+          color: #1091FF;
+        }
+
+        font-size:28px;
+        font-family:PingFang SC;
+        font-weight:400;
+        color:#000;
+      }
+    }
+  }
+}
+
+.span_width_90 {
+  width: 90% !important
+}
+
+.span_width_60 {
+  width: 60% !important
+}
+
+.span_width_55 {
+  width: 55% !important
+}
+
+.span_width_35 {
+  width: 35% !important
+}
+
+.span_width_10 {
+  width: 10% !important
+}
+
+page {
+  .at-input {
+    margin-left: 0;
+  }
+
+  at-input {
+    flex: 1;
+  }
+}

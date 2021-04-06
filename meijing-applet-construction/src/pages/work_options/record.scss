@@ -1,0 +1,106 @@
+.header {
+    width      : 100%;
+    height     : 96px;
+    display    : flex;
+    align-items: center;
+
+    .search_input {
+        margin       : 10px 32px;
+        height       : 76px;
+        background   : #f2f4f7;
+        border-radius: 38px;
+        display      : flex;
+        align-items  : center;
+        flex         : 1;
+
+        .img2 {
+            width : 48px;
+            height: 48px;
+            margin: auto 6px auto 18px;
+        }
+
+
+
+        .site_input {
+            border: 0;
+            height: 44px;
+            width : 80%;
+        }
+
+        .txt2 {
+            font-size  : 32px;
+            font-family: PingFang SC, PingFang SC-Regular;
+            font-weight: 400;
+            text-align : left;
+            color      : #a8b0bf;
+        }
+    }
+}
+
+.content {
+    padding-left: 32px;
+
+    &_box {
+        padding      : 28px 32px 28px 0px;
+        border-bottom: 2px solid #e6e7eb;
+        height       : 126px;
+    }
+
+    .txt3 {
+        font-size  : 32px;
+        font-family: PingFang SC, PingFang SC-Medium;
+        font-weight: 500;
+        text-align : left;
+        color      : #101f42;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        max-height:44px;
+        max-width: 80%;
+    }
+}
+
+.flex_row_between {
+    display        : flex;
+    justify-content: space-between;
+}
+
+.txt4 {
+    font-size  : 28px;
+    font-family: PingFang SC, PingFang SC-Regular;
+    font-weight: 400;
+    text-align : right;
+    color      : #1ebe8d;
+}
+
+.txt7 {
+    font-size  : 28px;
+    font-family: PingFang SC, PingFang SC-Regular;
+    font-weight: 400;
+    text-align : right;
+    color      : #E84D4D;
+}
+
+.txt5 {
+    font-size  : 28px;
+    font-family: PingFang SC, PingFang SC-Regular;
+    font-weight: 400;
+    text-align : left;
+    color      : #414f70;
+}
+
+.box1 {
+    line-height: 32px;
+}
+
+.txt6 {
+    font-size  : 24px;
+    font-family: PingFang SC, PingFang SC-Regular;
+    font-weight: 400;
+    text-align : left;
+    color      : #7a8499;
+}
+
+.body {
+    height: calc(100vh - 100px);
+    box-sizing: border-box;
+}

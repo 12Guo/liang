@@ -1,0 +1,124 @@
+@import '../../../../common.scss';
+
+.header-card {
+    display: flex;
+    justify-content: space-between;
+    // height: 288px;
+    flex-wrap: wrap;
+
+    .list-item {
+        width: 330px;
+        height: 288px;
+        padding: 24px;
+        box-sizing: border-box;
+        background-image: url(#{$rootConstructionUrl}/assets/pages/index/shipinshaobin_bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 22px;
+
+        &--jiance {
+            background-image: url(#{$rootConstructionUrl}/assets/pages/index/zaixianjiance_bg.png);
+        }
+
+        &--jianguan {
+            background-image: url(#{$rootConstructionUrl}/assets/pages/index/renyuanjianguan_bg2.png);
+            height: 216px;
+        }
+
+        &--penglin {
+            background-image: url(#{$rootConstructionUrl}/assets/pages/index/zhihuipenglin_bg.png);
+            height: 216px;
+        }
+
+        &_top {
+            display: flex;
+            align-items: center;
+            .left {
+                width: 48px;
+                height: 48px;
+            }
+            .txt {
+                font-size: 32px;
+                font-family: PingFang SC, PingFang SC-Medium;
+                font-weight: 500;
+                color: #ffffff;
+                flex: 1;
+                margin-left: 8px;
+            }
+            .right {
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+        &_center {
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding: 0 24px;
+            flex: 1;
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                &_value {
+                    font-size: 40px;
+                    font-family: DIN Alternate, DIN Alternate-Bold;
+                    font-weight: 700;
+                    color: #ffffff;
+                }
+                &_txt {
+                    opacity: 0.8;
+                    font-size: 24px;
+                    font-family: PingFang SC, PingFang SC-Regular;
+                    font-weight: 400;
+                    color: #ffffff;
+                    margin-top: 8px;
+                }
+            }
+        }
+
+        &_bottom {
+            .line {
+                width: 100%;
+                position: relative;
+                height: 12px;
+                background: linear-gradient(#4d6edb, #6587ea);
+                border-radius: 6px;
+                &_inner {
+                    position: absolute;
+                    width: 30%;
+                    height: 12px;
+                    border-radius: 6px;
+                    left: 0;
+                    background: linear-gradient(#d9ecff, #ffffff);
+                }
+
+                &--right {
+                    background: linear-gradient(#cb3838, #eb6151);
+                }
+            }
+            .line_value {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 16px;
+                .label {
+                    opacity: 0.8;
+                    font-size: 24px;
+                    font-family: PingFang SC, PingFang SC-Regular;
+                    font-weight: 400;
+                    color: #ffffff;
+                }
+                .value {
+                    font-size: 24px;
+                    font-family: PingFang SC, PingFang SC-Regular;
+                    font-weight: 400;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}

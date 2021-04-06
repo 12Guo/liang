@@ -1,0 +1,47 @@
+@import '../../common.scss';
+
+@import "~taro-ui/dist/style/components/swipe-action.scss";
+
+.examine-page {
+    box-sizing: border-box;
+    background: #ffffff;
+
+    .search-container {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 32px;
+
+        .search-box {
+            flex: 1;
+        }
+
+        .filter-box {
+            display: flex;
+            align-items: center;
+            .txt {
+                font-size:28px;
+                font-family:PingFang SC;
+                font-weight:400;
+                color:rgba(65,79,112,1);
+            }
+            .icon {
+                display: block;
+                background-image: url(#{$rootUrl}/assets/common/filter.png);
+                width: 40px;
+                height: 40px;
+                background-size: 40px 40px;
+                margin-left: 4px;
+            }
+        }
+    }
+
+    .body {
+        height: calc(100vh - 80px);
+        box-sizing: border-box;
+        padding: 0 32px;
+  
+        .empty {
+            padding-top: 200px;
+        }
+    }
+}

@@ -1,0 +1,321 @@
+.content{
+    width: 750px;
+    height: 100vh;
+
+    .topTabView{
+        display: flex;
+        height:80px;
+        background:rgba(255,255,255,1);
+        opacity:1;
+
+
+        .tabs {
+            flex: 1;
+        }
+
+        .tabView{
+            display: inline-block;
+            position: relative;
+            margin: 0px 38px 0px 58px;
+
+            .tabSelected{
+                font-size:36px;
+                font-family:PingFang SC;
+                font-weight:500;
+                line-height:80px;
+                color:rgba(16,31,66,1);
+                opacity:1;
+    
+                &::after {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    width: 60px;
+                    height: 4px;
+                    background:  rgba(16,145,255,1);
+                    content: '';
+                    transform: translate(-50%, 0)
+                }
+            }
+
+            .tab{
+                margin: 18px 38px;
+                font-size:32px;
+                font-family:PingFang SC;
+                font-weight:400;
+                line-height:80px;
+                color:rgba(122,132,153,1);
+                opacity:1;
+            }
+        }
+
+        .addButton{
+            padding: 0px 32px;
+            opacity:1;
+            font-size: 60px;
+            font-family:PingFang SC;
+            font-weight: 300;
+            color:rgba(122,132,153,1);
+            border-bottom:2px solid rgba(225,226,230,1);
+        }
+    }
+
+    .workListView{
+        height: calc(100vh - 80px);
+
+        .workItem{
+            width: 688px;
+            margin: 2px 30px 12px 32px;
+            display: block;
+
+            .personalInfo{
+                width: 688px;
+                height: 151px;
+
+                .avatar{
+                    float: left;
+                    width:88px;
+                    height:88px;
+                    background:rgba(0,0,0,0);
+                    border-radius:50%;
+                    opacity:1;  
+                    margin: 31px 8px 31px 0px;
+                }
+
+                .userInfo{
+                    height:88px;
+                    float: left;
+                    margin: 31px 0px 31px 8px;
+
+                    .userNameAndDepartment{
+                        display: flex;
+
+                        .username{
+                            height:44px;
+                            font-size:32px;
+                            font-family:PingFang SC;
+                            font-weight:500;
+                            line-height:44px;
+                            color:rgba(16,31,66,1);
+                            opacity:1;     
+                            max-width: 200px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;                                               
+                        }
+
+                        .department{
+                            margin-left: 10px;
+                            padding: 0px 8px;
+                            height:44px;
+                            background:rgba(242,244,247,1);
+                            opacity:1;
+                            border-radius:6px;
+                            font-size:24px;
+                            font-family:PingFang SC;
+                            font-weight:400;
+                            line-height:44px;
+                            color:rgba(122,132,153,1);
+                            opacity:1;  
+                            max-width: 200px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;                          
+                        }
+                    }
+                    
+
+                    .time{
+                        display: block;
+                        height:40px;
+                        font-size:28px;
+                        font-family:PingFang SC;
+                        font-weight:400;
+                        line-height:40px;
+                        color:rgba(122,132,153,1);
+                        opacity:1;
+                    }
+                }
+
+                .doneIcon{
+                    width: 151px;
+                    height: 128px;
+                    float:right;
+                }
+                              
+            }
+
+            .content{
+                width: 688px;
+                // height:96px;
+                height: auto;
+                margin-bottom: 20px;
+                font-size:32px;
+                font-family:PingFang SC;
+                font-weight:400;
+                line-height:48px;
+                color:rgba(16,31,66,1);
+                opacity:1;
+
+                .inspectType{
+                    // width: 144px;
+                    height: 48px;
+                    font-size:28px;
+                    font-family:PingFang SC;
+                    font-weight:400;
+                    line-height:48px;
+                    color:rgba(122,132,153,1);
+                    background:rgba(242,244,247,1);
+                    opacity:1;
+                    border-radius:28px;
+                    padding: 0 16px;
+                    margin-right: 6px;
+                }
+            }
+
+            .voiceView{
+                width: 688px;
+                // height:96px;
+                
+                .voice{
+                    margin: 8px 0px;
+                }
+                margin-bottom: 20px;
+            }
+
+            .images{
+                width:688px;
+                // height:208px;
+                margin: 2px 0px 2px 4px;
+
+                .imageItem{
+                    width:208px;
+                    height:208px;
+                    margin-right: 16px;
+                    margin-bottom: 6px;
+                    background:rgba(228,232,239,1);
+                    opacity:1;
+                }
+            }
+
+            .address{
+                margin: 12px 0px 18px 0px;
+
+                .addressIcon{
+                    width:36px;
+                    height:36px;
+                    position: relative;
+                    top: 8px;
+                }
+                .text{
+                    height:40px;
+                    margin: 16px 2px;
+                    font-size:28px;
+                    font-family:PingFang SC;
+                    font-weight:400;
+                    line-height:36px;
+                    color:rgba(122,132,153,1);
+                    opacity:1;
+                }
+            }
+
+            .operate{
+                // width:688px;
+                height: 44px;
+                margin-bottom: 32px;
+
+                .buttonView{
+                    height: 72px;
+                    width: 140px;
+                    float:left;
+                    margin-right: 8px;
+
+                    .icon{
+                        width: 40px;
+                        height: 40px;
+                        float:left;
+                        margin: 2px 0px;
+                    }
+
+                    .text{
+                        float:left;
+                        margin-left: 10px;
+                        height:44px;
+                        line-height: 44px;
+                        font-size:32px;
+                        font-family:PingFang SC;
+                        font-weight:400;
+                        color:rgba(65,79,112,1);
+                        opacity:1;
+                        max-width: 230px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: block;
+                    }
+
+                    .gray_text{
+                        float:left;
+                        margin-left: 10px;
+                        height:44px;
+                        line-height: 44px;
+                        font-size:32px;
+                        font-family:PingFang SC;
+                        font-weight:400;
+                        color:#B2B8C6;
+                        opacity:1;
+                    }
+
+                    .me{
+                        float:left;
+                        height:44px;
+                        line-height: 44px;
+                        margin-left: 2px;
+                        font-size:32px;
+                        font-family:PingFang SC;
+                        font-weight:400;
+                        color:rgba(16,145,255,1);
+                        opacity:1;
+                    }
+                }
+
+                .shareButton{
+                    border:none;
+                    opacity:1;
+                    text-align: center;
+                    padding: 0px;                        
+                }
+
+                .width180{
+                    width: 280px;
+                    margin-right: 0;
+                }
+
+                .rightButton{
+                    width: 100px;
+                    float: right;
+
+                    .icon{
+                        float: right;
+                    }
+                    .text{
+                        float: right;
+                    }
+                }
+
+            }
+
+        }
+
+        .splitView{
+            width:750px;
+            height:24px;
+            background:rgba(242,244,247,1);
+            opacity:1;
+        }
+
+        .empty {
+            padding-top: 232px;
+        }
+    }
+}

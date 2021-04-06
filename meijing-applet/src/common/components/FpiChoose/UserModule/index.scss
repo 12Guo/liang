@@ -1,0 +1,57 @@
+.module__person {
+    .module__body {
+        .module__item {
+            display: flex;
+            box-sizing: border-box;
+            height: 104px;
+            align-items: center;
+            position: relative;
+            padding-left: 32px;
+            .img {
+                width: 48px;
+                height: 48px;
+                padding: 0 10px;
+            }
+            .user_img {
+                width:72px;
+                height:72px;
+                border-radius:50%;
+                margin-left: 24px;
+            }
+            .user_txt {
+                font-size:36px;
+                font-family:PingFang SC;
+                font-weight:400;
+                color:rgba(16,31,66,1);
+                margin-left: 16px;
+            }
+            &:after {
+                content: '';
+                height: 2px;
+                position: absolute;
+                left: 60px;
+                right: 0;
+                bottom: 0;
+                background-color: #EBEBEB;
+            }
+
+            &--disabled {
+                opacity: .5;
+            }
+        }
+    }
+
+    &--hide {
+        display: none;
+    }
+
+    .space {
+        height: 24px;
+        width: 100%;
+        background-color: #F2F5F7;
+
+        &--hide {
+            height: 0;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.flex_row{
+    display: flex;
+}
+.bottom_button{
+    height: 88px;
+    line-height: 88px;
+    border-top:2px solid #E8EBED;
+}
+
+.confirm{
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: #0D86FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cancel{
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: #000;
+    border-right: 2px solid #E8EBED;
+    box-sizing: border-box;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--label {
+        font-size: 28px;
+        font-family: PingFang SC, PingFang SC-Regular;
+        font-weight: 400;
+        color: #0d86ff;
+    }
+}
+
+.min {
+    min-height: 200px;
+}
+
+.picker{
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #b2b2b2;
+    margin: 0 10px;
+}
+
+.picker_selected{
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #0D86FF;
+    margin: 0 10px;
+}
+
+.arrow_down {
+    width              : 0px;
+    border             : 10px solid #0d86ff;
+    margin-left: 10px;
+    border-bottom-color: transparent;
+    /*设置下边框的颜色为透明色,当然也设置为白色,因为背景颜色为白色*/
+    border-left-color  : transparent;
+    border-right-color : transparent;
+    transform: translate(0,30%);
+}

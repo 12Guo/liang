@@ -1,0 +1,95 @@
+.divisionChooseComponent{
+
+    .middle_choose{
+        width: 750px;
+        border-bottom: 2px solid #EBEBEB;
+        margin: 8px 0;
+        // height: 88px;
+
+        .division{
+            display: inline-block;
+            margin: 0px 0px 0px 25px;
+            position: relative;
+            padding-bottom: 6px;
+
+            .division_text{
+                display: block;
+                height:50px;
+                font-size:36px;
+                font-family:PingFang SC;
+                font-weight:400;
+                line-height:50px;
+                color:rgba(27,46,89,1);
+                opacity:1;
+                text-align: center;
+                max-width: 300px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .border_bootom{
+                &::after {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    width: 60px;
+                    height: 4px;
+                    background:  rgba(16,145,255,1);
+                    content: '';
+                    transform: translate(-50%, 0)
+                }
+            }
+
+           
+        }
+
+        .choose_view{
+            width:54px;
+            margin: 0px 0px 0px 25px;
+            display: inline-block;
+            position: absolute;
+
+            .choose{
+                display: block;
+                width:108px;
+                height:50px;
+                font-size:36px;
+                font-family:PingFang SC;
+                font-weight:500;
+                line-height:50px;
+                color:rgba(16,145,255,1);
+                opacity:1;
+            }
+
+            .border_bootom{
+                display: block;
+                margin: 0px 16px;
+                width:60px;
+                height:0px;
+                border-bottom:4px solid rgba(16,145,255,1);
+                opacity:1;
+            }
+            
+        }
+        
+    }
+
+    .division_list{
+        margin: 5px 0px;
+        max-height: calc(100% - 100px);
+
+        .division_item{
+            font-size:32px;
+            font-family:PingFang SC;
+            font-weight:400;
+            line-height:78px;
+            color:rgba(27,46,89,1);
+            padding: 0px 25px;
+        }
+
+        .selected{
+            color:rgba(16,145,255,1);
+        }
+    }
+}

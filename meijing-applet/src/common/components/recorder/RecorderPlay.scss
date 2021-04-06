@@ -1,0 +1,30 @@
+.recorderPlayComponent{
+    width:200px;
+    height:80px;
+    background:rgba(224,241,255,1);
+    opacity:1;
+    border-radius:16px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 20px;
+
+    .voiceIcon{
+        float: left;
+        width:44px;
+        height:44px;
+        margin: 18px 16px 18px 16px;
+    }
+    .voiceLength{
+        float: left;
+        margin: 22px 16px 20px 0px;
+        width:44px;
+        height:38px;
+        font-size:28px;
+        font-family:Arial Unicode MS;
+        font-weight:400;
+        line-height:38px;
+        color:rgba(51,51,51,1);
+        opacity:1;                    
+    }
+}

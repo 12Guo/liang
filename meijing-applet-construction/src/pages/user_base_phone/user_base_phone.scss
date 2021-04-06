@@ -1,0 +1,220 @@
+//表单背景色
+$form-input-bg: #F2F4F7;
+//表单字体颜色
+$form-input-text: #B2B8C6;
+//按钮背景色
+$btn-bg: #1091FF;
+
+.bg_view {
+  background: white;
+
+  .space_view {
+    width: 100%;
+    height: 25px;
+    background: #F2F5F7
+  }
+
+  .border_view {
+    width: 100%;
+    height: 20px;
+    border-bottom: 0.5px solid #EBEBEB;
+  }
+
+  .control_bg {
+    padding: 30px;
+
+    .item_warn_view {
+      display: block;
+      height: 20px;
+      line-height: 20px;
+      margin-left: 70px;
+      color: #E23838;
+      font-size: 32px;
+    }
+
+    .item_img {
+      vertical-align: middle;
+      height: 50px;
+      width: 50px;
+    }
+
+    .item_text {
+      vertical-align: middle;
+      display: inline-block;
+      height: 90px;
+      line-height: 90px;
+      text-align: left;
+      font-size: 40px;
+      color: #101F42;
+      margin-left: 20px;
+    }
+
+    .item_view {
+      height: 110px;
+      width: 100%;
+
+      .item_otherPhone_group {
+        border-radius: 15px;
+        display: block;
+        height: 90px;
+        line-height: 90px;
+        text-align: left;
+        margin-left: 70px;
+        background: #F2F4F7;
+
+        .at-input::after {
+          border: 0;
+        }
+
+        .item_otherPhone_phone {
+          display: inline-block;
+          vertical-align: middle;
+          text-align: left;
+          height: 60px;
+          color: #B2B8C6;
+          margin-left: 20px;
+          line-height: 60px;
+        }
+
+        .item_otherPhone_verifyCode {
+          display: inline-block;
+          vertical-align: middle;
+          text-align: left;
+          height: 60px;
+          width: 250px;
+          color: #B2B8C6;
+          margin-left: 20px;
+          line-height: 60px;
+        }
+
+        .item_verifyCode_btn {
+          vertical-align: middle;
+          height: 90px;
+          float: right;
+
+          .at-button {
+            display: inline;
+            background: $form-input-bg;
+            font-size: 40px;
+            line-height: 100px;
+            border: 0
+          }
+
+          .at-input__input {
+            border-radius: 15px;
+            font-size: 35px;
+            color: $form-input-text;
+          }
+
+          .at-button {
+            text-align: center;
+            display: inline-block;
+            height: 90px;
+            background: $form-input-bg;
+            font-size: 40px;
+            line-height: 90px;
+            color: $btn-bg;
+            border: 0
+          }
+        }
+
+        .item_verifyCode_btn_gray {
+          vertical-align: middle;
+          height: 90px;
+          float: right;
+
+          .at-button {
+            display: inline;
+            background: $form-input-bg;
+            font-size: 40px;
+            line-height: 100px;
+            border: 0
+          }
+
+          .at-input__input {
+            border-radius: 15px;
+            font-size: 35px;
+            color: $form-input-text;
+          }
+
+          .at-button {
+            text-align: center;
+            display: inline-block;
+            height: 90px;
+            background: $form-input-bg;
+            font-size: 40px;
+            line-height: 90px;
+            color: #7A8499;
+            border: 0
+          }
+        }
+
+
+        .at-input {
+          padding: 0px;
+          background: #F2F4F7;
+        }
+      }
+
+      .item_phone_group {
+        border-radius: 15px;
+        display: block;
+        height: 90px;
+        line-height: 90px;
+        margin-left: 70px;
+        background: #F2F4F7;
+
+        .item_phone_tip {
+          margin-left: 15px;
+          vertical-align: middle;
+          height: 90px;
+          color: #B2B8C6;
+          line-height: 90px;
+        }
+
+        .item_phone_btn {
+          vertical-align: middle;
+          height: 90px;
+          float: right;
+
+          .at-button {
+            display: inline;
+            background: $form-input-bg;
+            font-size: 40px;
+            line-height: 100px;
+            color: $btn-bg;
+            border: 0
+          }
+
+          .at-input__input {
+            border-radius: 15px;
+            font-size: 35px;
+            color: $form-input-text;
+          }
+        }
+      }
+    }
+  }
+  
+  .view_foot {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+
+    .view_foot_btn {
+      display: inline-block;
+      width: 95%;
+      height: 90px;
+    }
+
+    .at-button--primary {
+      background-color: $btn-bg;
+    }
+
+    .at-button__text {
+      font-size: 35px;
+    }
+  }
+
+}

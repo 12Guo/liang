@@ -1,0 +1,166 @@
+@import '../../common.scss';
+.search-box {
+    width     : 100%;
+    height    : 96px;
+    background: rgba(255, 255, 255, 1);
+    opacity   : 1;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 100;
+
+    .search-input {
+        margin       : 8px 32px;
+        height       : 80px;
+        background   : rgba(242, 244, 247, 1);
+        opacity      : 1;
+        border-radius: 40px;
+        background-image: url(#{$rootUrl}/assets/common/search_2.png);
+        background-size: 40px 40px;
+        background-repeat: no-repeat;
+        background-position: 20px 20px;
+        padding-left: 72px;
+    }
+
+    .place-holder{
+        font-size:32px;
+        font-family:PingFang SC;
+        font-weight:400;
+        color:rgba(168,176,191,1);
+    }
+}
+
+.hr-tag{
+    width:750px;
+    height:16px;
+    background:rgba(242,244,247,1);
+    opacity:1;
+}
+
+.path{
+    width: 1800px;
+    height: 95px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    padding-left: 32px;
+    line-height: 95px;
+
+
+        &__item {
+
+            color:rgba(122,132,153,1);
+    
+            &--nav {
+
+                display: flex;
+                align-items: center;
+                color: #1091FF;
+                position: relative;
+                &:after {
+                    content: '>';
+                    display: block;
+                    width:16px;
+                    height:30px;
+                    padding: 0 18px;
+                    line-height: 30px;
+                    color:rgba(122,132,153,1);
+                    margin-top: -4px;
+                }
+                &:before {
+                    content: ' ';
+                    display: flex;
+                    position: absolute;
+                    height: 3px;
+                    background-color: #1091FF;
+                    bottom: 30px;
+                    width: calc(100% - 50px);
+                }
+            }
+        
+    }
+
+}
+
+.department-list{
+    width:718px;
+    height:104px;
+    border-bottom:1PX solid rgba(235,235,235,1);
+    border-left:none;
+    border-right:none;
+    opacity:1;
+    line-height: 104px;
+    font-size:36px;
+    font-family:PingFang SC;
+    font-weight:400;
+    color:rgba(27,46,89,1);
+    margin-left: 56px;
+    .txt{
+        width: 480px;
+    }
+
+
+}
+
+.radio {
+    width:48px;
+    height:48px;
+    float: left;
+    margin: 28px 24px auto auto;
+}
+
+.flex-row{
+    display: flex;
+
+}
+
+.flex-row-center{
+    display: flex;
+    align-items: center;
+}
+
+.botton{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:98px;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 0px 20px rgba(0,0,0,0.1);
+}
+
+.select{
+    width: 416px;
+    height: 98px;
+    line-height: 98px;
+    font-size:32px;
+    font-family:PingFang SC;
+    font-weight:400;
+    color:rgba(83,98,131,1);
+    padding-left: 32px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.comfirm{
+    line-height: 98px;
+    text-align:center;
+    background:rgba(16,145,255,1);
+    width: 334px;
+    font-size:32px;
+    font-family:PingFang SC;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+}
+
+.icon{
+    line-height: 104px;
+    
+    background-image: url(#{$rootUrl}/assets/components/DepartmentSelect/down_tree.png);
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+.kong{
+    height: 100px;
+}

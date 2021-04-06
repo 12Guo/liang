@@ -1,0 +1,74 @@
+@import '../../common.scss';
+
+.simpleTextArea{
+    position: relative;
+    z-index: 100;
+}
+
+.btn-group {
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 32px;
+    .btn {
+        margin-right: 16px;
+    }
+}
+
+.recorderPlay{
+    margin: 30px 32px 20px 0;
+}
+
+.mask{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 750rpx;
+    height: 100vh;
+    z-index: 998;
+    background: transparent; 
+}
+
+.atLabelVoiceView{
+    position: fixed;
+    z-index: 999;
+    width:750px;
+    height:96px;
+    background:rgba(255,255,255,1);
+    box-shadow:0px -1px 0px rgba(225,226,230,1);
+    opacity:1;
+    transform: translate3d(0,0,0);
+    box-sizing: border-box;
+    margin-left: -32px;
+    
+    .labelButton{
+        float: left;
+        width: 44px;
+        height: 44px;
+        margin: 26px 32px;       
+        background-image: url(#{$rootUrl}/assets/common/richInput/label_button.png);
+        background-size: 44px 44px;
+    }
+    .atButton{
+        float: left;
+        width: 44px;
+        height: 44px;
+        margin: 26px 32px; 
+        background-image: url(#{$rootUrl}/assets/common/richInput/at_button.png);
+        background-size: 44px 44px;
+    }
+    .recoderButton{
+        float: left;
+        width: 44px;
+        height: 44px;
+        padding: 26px 32px;
+        background-image: url(#{$rootUrl}/assets/common/richInput/recoder_button.png);
+        background-size: 44px 44px;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        
+        &.ing{
+            background-image: url(#{$rootUrl}/assets/common/richInput/recodering_button.png);
+        }
+    }
+}
